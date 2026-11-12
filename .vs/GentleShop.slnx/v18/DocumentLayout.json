@@ -1,0 +1,246 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Documents\\GentleShop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Documents\\GentleShop\\GentleShop\\Migrations\\20261112093031_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GentleShop\\Migrations\\20261112093031_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\models\\voucher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\models\\voucher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\models\\productvariant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\models\\productvariant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\models\\importdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\models\\importdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\models\\import.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\models\\import.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\models\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\models\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20261112093031_Init.cs",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Migrations\\20261112093031_Init.cs",
+              "RelativeDocumentMoniker": "GentleShop\\Migrations\\20261112093031_Init.cs",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Migrations\\20261112093031_Init.cs",
+              "RelativeToolTip": "GentleShop\\Migrations\\20261112093031_Init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T09:30:32.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Models\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "GentleShop\\Models\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Models\\ApplicationDbContext.cs",
+              "RelativeToolTip": "GentleShop\\Models\\ApplicationDbContext.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAkwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T09:14:22.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Voucher.cs",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Models\\Voucher.cs",
+              "RelativeDocumentMoniker": "GentleShop\\Models\\Voucher.cs",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Models\\Voucher.cs",
+              "RelativeToolTip": "GentleShop\\Models\\Voucher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T09:14:10.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductVariant.cs",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Models\\ProductVariant.cs",
+              "RelativeDocumentMoniker": "GentleShop\\Models\\ProductVariant.cs",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Models\\ProductVariant.cs",
+              "RelativeToolTip": "GentleShop\\Models\\ProductVariant.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T09:13:59.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductImage.cs",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Models\\ProductImage.cs",
+              "RelativeDocumentMoniker": "GentleShop\\Models\\ProductImage.cs",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Models\\ProductImage.cs",
+              "RelativeToolTip": "GentleShop\\Models\\ProductImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T09:13:44.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Models\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "GentleShop\\Models\\OrderDetail.cs",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Models\\OrderDetail.cs",
+              "RelativeToolTip": "GentleShop\\Models\\OrderDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwA4AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T09:13:27.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "GentleShop\\Models\\Order.cs",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Models\\Order.cs",
+              "RelativeToolTip": "GentleShop\\Models\\Order.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAUwBwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T09:13:05.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ImportDetail.cs",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Models\\ImportDetail.cs",
+              "RelativeDocumentMoniker": "GentleShop\\Models\\ImportDetail.cs",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Models\\ImportDetail.cs",
+              "RelativeToolTip": "GentleShop\\Models\\ImportDetail.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAgwCYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T09:12:46.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Import.cs",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Models\\Import.cs",
+              "RelativeDocumentMoniker": "GentleShop\\Models\\Import.cs",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Models\\Import.cs",
+              "RelativeToolTip": "GentleShop\\Models\\Import.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAIwCMAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T09:12:32.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Models\\User.cs",
+              "RelativeDocumentMoniker": "GentleShop\\Models\\User.cs",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Models\\User.cs",
+              "RelativeToolTip": "GentleShop\\Models\\User.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAQwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T09:11:57.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "GentleShop\\Models\\Category.cs",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Models\\Category.cs",
+              "RelativeToolTip": "GentleShop\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T09:11:16.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Brand.cs",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Models\\Brand.cs",
+              "RelativeDocumentMoniker": "GentleShop\\Models\\Brand.cs",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Models\\Brand.cs",
+              "RelativeToolTip": "GentleShop\\Models\\Brand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T09:11:06.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Supplier.cs",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Models\\Supplier.cs",
+              "RelativeDocumentMoniker": "GentleShop\\Models\\Supplier.cs",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Models\\Supplier.cs",
+              "RelativeToolTip": "GentleShop\\Models\\Supplier.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T09:11:29.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "GentleShop\\Models\\Product.cs",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Models\\Product.cs",
+              "RelativeToolTip": "GentleShop\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T09:09:49.663Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
