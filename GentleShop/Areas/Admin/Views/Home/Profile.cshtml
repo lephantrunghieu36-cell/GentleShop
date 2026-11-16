@@ -1,0 +1,170 @@
+﻿@{
+	ViewData["Title"] = "Trang cá nhân";
+}
+
+<div class="pd-ltr-20 xs-pd-20-10">
+	<div class="min-height-200px">
+		<div class="page-header">
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<div class="title">
+						<h4>Hồ sơ cá nhân</h4>
+					</div>
+					<nav aria-label="breadcrumb" role="navigation">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item">
+								<a href="index.php">Trang chủ</a>
+							</li>
+							<li class="breadcrumb-item active" aria-current="page">
+								Profile
+							</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+		<?php if (!empty($error)): ?>
+		<div class="alert alert-danger alert-dismissible fade show" role="alert">
+			<?= $error ?>
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		<?php endif; ?>
+
+		<?php if (!empty($success)): ?>
+		<div class="alert alert-success alert-dismissible fade show" role="alert">
+			<?= $success ?>
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		<?php endif; ?>
+
+		<div class="row">
+			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-30">
+				<div class="pd-20 card-box height-100-p">
+					<div class="profile-photo">
+						<a href="modal" data-toggle="modal" data-target="#modal" class="edit-avatar">
+							<i class="fa fa-pencil"></i>
+						</a>
+						<img src="../vendors/images/photo1.jpg" alt="Avatar" class="avatar-photo" />
+
+						<div class="modal fade" id="modal" tabindex="-1" role="dialog"
+							 aria-labelledby="modalLabel" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered" role="document">
+								<div class="modal-content">
+									<div class="modal-body pd-5">
+										<div class="img-container">
+											<img id="image" src="../vendors/images/photo2.jpg" alt="Picture" />
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-primary">Cập nhật</button>
+										<button type="button" class="btn btn-default" data-dismiss="modal">
+											Đóng
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<h5 class="text-center h5 mb-0">
+						<?= htmlspecialchars($currentUser['HoTen'] ?? $currentUser['TenDangNhap']) ?>
+					</h5>
+					<p class="text-center text-muted font-14">
+						Vai trò:
+						<strong><?= htmlspecialchars($currentUser['VaiTro'] ?? 'Thành viên') ?></strong>
+					</p>
+
+					<div class="profile-info">
+						<h5 class="mb-20 h5 text-blue">Thông tin liên hệ</h5>
+						<ul>
+							<li>
+								<span>Tên đăng nhập:</span>
+								<?= htmlspecialchars($currentUser['TenDangNhap']) ?>
+							</li>
+							<li>
+								<span>Email:</span>
+								<?= htmlspecialchars($currentUser['Email'] ?? 'Chưa cập nhật') ?>
+							</li>
+							<li>
+								<span>Số điện thoại:</span>
+								<?= htmlspecialchars($currentUser['SoDienThoai'] ?? 'Chưa cập nhật') ?>
+							</li>
+							<li>
+								<span>CCCD:</span>
+								<?= htmlspecialchars($currentUser['CCCD'] ?? 'Chưa cập nhật') ?>
+							</li>
+							<li>
+								<span>Địa chỉ:</span>
+								<?= nl2br(htmlspecialchars($currentUser['DiaChi'] ?? 'Chưa cập nhật')) ?>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 mb-30">
+				<div class="card-box height-100-p overflow-hidden">
+					<div class="profile-tab height-100-p">
+						<div class="tab height-100-p">
+							<ul class="nav nav-tabs customtab" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active" data-toggle="tab" href="#setting" role="tab">
+										Đổi
+										mật khẩu
+									</a>
+								</li>
+							</ul>
+							<div class="tab-content">
+								<div class="tab-pane fade show active" id="setting" role="tabpanel">
+									<div class="profile-setting">
+										<form action="" method="POST">
+											<input type="hidden" name="change_password" value="1">
+											<ul class="profile-edit-list row">
+												<li class="weight-500 col-md-12">
+													<h4 class="text-blue h5 mb-20">
+														Thay đổi mật khẩu tài khoản
+													</h4>
+
+													<div class="form-group">
+														<label>Mật khẩu hiện tại</label>
+														<input class="form-control form-control-lg"
+															   type="password" name="current_password" required
+															   placeholder="Nhập mật khẩu cũ" />
+													</div>
+
+													<div class="form-group">
+														<label>Mật khẩu mới</label>
+														<input class="form-control form-control-lg"
+															   type="password" name="new_password" required
+															   placeholder="Nhập mật khẩu mới (tối thiểu 6 ký tự)" />
+													</div>
+
+													<div class="form-group">
+														<label>Nhập lại mật khẩu mới</label>
+														<input class="form-control form-control-lg"
+															   type="password" name="confirm_password" required
+															   placeholder="Xác nhận lại mật khẩu mới" />
+													</div>
+
+													<div class="form-group mb-0">
+														<input type="submit" class="btn btn-primary"
+															   value="Lưu thay đổi" />
+													</div>
+												</li>
+											</ul>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,175 @@
+﻿@model Classroom360.Models.User
+
+@{
+    ViewData["Title"] = "Thêm người dùng";
+}
+
+<div class="pd-ltr-20 xs-pd-20-10">
+    <div class="min-height-200px">
+
+        <!-- Page Header -->
+        <div class="page-header">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="title">
+                        <h4>Thêm người dùng</h4>
+                    </div>
+
+                    <nav aria-label="breadcrumb" role="navigation">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a asp-area="Admin"
+                                   asp-controller="Home"
+                                   asp-action="Index">
+                                    Trang chủ
+                                </a>
+                            </li>
+
+                            <li class="breadcrumb-item">
+                                <a asp-area="Admin"
+                                   asp-controller="User"
+                                   asp-action="Index">
+                                    Người dùng
+                                </a>
+                            </li>
+
+                            <li class="breadcrumb-item active" aria-current="page">
+                                Thêm người dùng
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form -->
+        <div class="pd-20 card-box mb-30">
+            <div class="pd-20">
+                <h4 class="text-blue h4">Thêm người dùng mới</h4>
+                <p class="mb-0">
+                    Nhập thông tin tài khoản cần tạo trong hệ thống.
+                </p>
+            </div>
+
+            <div class="pb-20">
+                <form asp-area="Admin"
+                      asp-controller="User"
+                      asp-action="Create"
+                      method="post">
+
+                    @Html.AntiForgeryToken()
+
+                    <div asp-validation-summary="ModelOnly"
+                         class="text-danger mb-3">
+                    </div>
+
+                    <div class="row">
+
+                        <!-- Họ tên -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="FullName">Họ và tên <span class="text-danger">*</span></label>
+                                <input asp-for="FullName"
+                                       class="form-control"
+                                       placeholder="Nhập họ và tên"
+                                       required />
+                                <span asp-validation-for="FullName"
+                                      class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="Email">Email <span class="text-danger">*</span></label>
+                                <input asp-for="Email"
+                                       type="email"
+                                       class="form-control"
+                                       placeholder="example@email.com"
+                                       required />
+                                <span asp-validation-for="Email"
+                                      class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <!-- Số điện thoại -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="Phone">Số điện thoại</label>
+                                <input asp-for="Phone"
+                                       type="tel"
+                                       class="form-control"
+                                       placeholder="Nhập số điện thoại" />
+                                <span asp-validation-for="Phone"
+                                      class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <!-- Mật khẩu -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="password">
+                                    Mật khẩu <span class="text-danger">*</span>
+                                </label>
+
+                                <input type="password"
+                                       id="password"
+                                       name="password"
+                                       class="form-control"
+                                       placeholder="Nhập mật khẩu"
+                                       minlength="6"
+                                       autocomplete="new-password"
+                                       required />
+                            </div>
+                        </div>
+
+                        <!-- Vai trò -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="Role">
+                                    Vai trò <span class="text-danger">*</span>
+                                </label>
+
+                                <select asp-for="Role" class="form-control" required>
+                                    <option value="STUDENT">Học sinh</option>
+                                    <option value="TEACHER">Giảng viên</option>
+                                    <option value="ADMIN">Quản trị viên</option>
+                                </select>
+
+                                <span asp-validation-for="Role"
+                                      class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <!-- Trạng thái -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="IsActive">Trạng thái tài khoản</label>
+
+                                <select asp-for="IsActive" class="form-control">
+                                    <option value="true">Hoạt động</option>
+                                    <option value="false">Ngừng hoạt động</option>
+                                </select>
+
+                                <span asp-validation-for="IsActive"
+                                      class="text-danger"></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        <i class="dw dw-diskette1"></i> Lưu
+                    </button>
+
+                    <a asp-area="Admin"
+                       asp-controller="User"
+                       asp-action="Index"
+                       class="btn btn-secondary">
+                        Quay lại
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

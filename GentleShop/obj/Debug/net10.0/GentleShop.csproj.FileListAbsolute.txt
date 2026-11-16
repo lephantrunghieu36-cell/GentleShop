@@ -235,3 +235,4 @@ D:\Documents\GentleShop\GentleShop\obj\Debug\net10.0\ref\GentleShop.dll
 D:\Documents\GentleShop\GentleShop\bin\Debug\net10.0\System.Formats.Asn1.dll
 D:\Documents\GentleShop\GentleShop\bin\Debug\net10.0\System.Security.Cryptography.Pkcs.dll
 D:\Documents\GentleShop\GentleShop\bin\Debug\net10.0\runtimes\win\lib\net10.0\System.Security.Cryptography.Pkcs.dll
+D:\Documents\GentleShop\GentleShop\obj\Debug\net10.0\GentleShop.sourcelink.json
