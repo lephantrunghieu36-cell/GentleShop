@@ -1,29 +1,46 @@
 ﻿@{
-    ViewData["Title"] = "Trang quản trị";
+    ViewData["Title"] = "Trang quản trị GentleShop";
 
-    var userCount = 12;
-    var subjectCount = 8;
-    var classroomCount = 6;
-    var quizCount = 24;
+    var userCount = 1240;
+    var productCount = 48;
+    var orderCount = 156;
+    var revenueTotal = "1.850.000.000₫";
     var currentYear = DateTime.Now.Year;
 
-    var monthlyQuizData = new[] { 8, 12, 10, 16, 14, 20, 18, 24, 21, 27, 30, 35 };
-    var monthlyStudentData = new[] { 10, 12, 15, 18, 20, 22, 25, 28, 30, 32, 35, 40 };
+    var monthlyRevenueData = new[]
+    {
+        150, 220, 190, 280, 250, 360,
+        310, 420, 390, 520, 590, 680
+    };
+
+    var monthlyProductData = new[]
+    {
+        12, 18, 15, 22, 20, 28,
+        25, 34, 30, 42, 48, 55
+    };
 }
 
 <div class="xs-pd-20-10 pd-ltr-20">
+
     <div class="title pb-20">
-        <h2 class="h3 mb-0">Trang Quản Trị Hệ Thống</h2>
-        <p class="text-muted mt-2">Tổng quan hoạt động hệ thống GentleShop</p>
+        <h2 class="h3 mb-0">Tổng Quan Hệ Thống GentleShop</h2>
+        <p class="text-muted mt-2">
+            Theo dõi hoạt động kinh doanh, sản phẩm và đơn hàng của cửa hàng laptop
+        </p>
     </div>
 
     <div class="row pb-10">
+
         <div class="col-xl-3 col-lg-3 col-md-6 mb-20">
             <div class="card-box height-100-p widget-style3">
                 <div class="d-flex flex-wrap">
                     <div class="widget-data">
-                        <div class="weight-700 font-24 text-dark">@userCount</div>
-                        <div class="font-14 text-secondary weight-500">Tổng tài khoản</div>
+                        <div class="weight-700 font-24 text-dark">
+                            @userCount.ToString("N0")
+                        </div>
+                        <div class="font-14 text-secondary weight-500">
+                            Tổng tài khoản
+                        </div>
                     </div>
                     <div class="widget-icon">
                         <div class="icon" data-color="#00eccf">
@@ -38,12 +55,16 @@
             <div class="card-box height-100-p widget-style3">
                 <div class="d-flex flex-wrap">
                     <div class="widget-data">
-                        <div class="weight-700 font-24 text-dark">@subjectCount</div>
-                        <div class="font-14 text-secondary weight-500">Môn học</div>
+                        <div class="weight-700 font-24 text-dark">
+                            @productCount
+                        </div>
+                        <div class="font-14 text-secondary weight-500">
+                            Sản phẩm
+                        </div>
                     </div>
                     <div class="widget-icon">
                         <div class="icon" data-color="#ff5b5b">
-                            <i class="icon-copy dw dw-book"></i>
+                            <i class="icon-copy dw dw-laptop"></i>
                         </div>
                     </div>
                 </div>
@@ -54,12 +75,16 @@
             <div class="card-box height-100-p widget-style3">
                 <div class="d-flex flex-wrap">
                     <div class="widget-data">
-                        <div class="weight-700 font-24 text-dark">@classroomCount</div>
-                        <div class="font-14 text-secondary weight-500">Lớp học</div>
+                        <div class="weight-700 font-24 text-dark">
+                            @orderCount
+                        </div>
+                        <div class="font-14 text-secondary weight-500">
+                            Tổng đơn hàng
+                        </div>
                     </div>
                     <div class="widget-icon">
                         <div class="icon" data-color="#09cc06">
-                            <i class="icon-copy dw dw-building"></i>
+                            <i class="icon-copy dw dw-shopping-cart"></i>
                         </div>
                     </div>
                 </div>
@@ -70,38 +95,58 @@
             <div class="card-box height-100-p widget-style3">
                 <div class="d-flex flex-wrap">
                     <div class="widget-data">
-                        <div class="weight-700 font-24 text-success">@quizCount</div>
-                        <div class="font-14 text-secondary weight-500">Bài kiểm tra</div>
+                        <div class="weight-700 font-22 text-success">
+                            @revenueTotal
+                        </div>
+                        <div class="font-14 text-secondary weight-500">
+                            Tổng doanh thu
+                        </div>
                     </div>
                     <div class="widget-icon">
                         <div class="icon" data-color="#28a745">
-                            <i class="icon-copy dw dw-edit"></i>
+                            <i class="icon-copy dw dw-money"></i>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card-box mb-30 mt-4">
+        <div class="pd-20">
+            <h4 class="text-blue h4">
+                Thống kê doanh thu năm @currentYear
+            </h4>
+            <p class="text-muted">
+                Doanh thu bán laptop theo từng tháng (triệu VNĐ)
+            </p>
+        </div>
+
+        <div class="pb-20 px-3">
+            <div style="position: relative; height: 350px; width: 100%;">
+                <canvas id="revenueChart"></canvas>
             </div>
         </div>
     </div>
 
     <div class="card-box mb-30 mt-4">
         <div class="pd-20">
-            <h4 class="text-blue h4">Thống kê bài kiểm tra năm @currentYear</h4>
-            <p class="text-muted">Số bài kiểm tra được tạo theo từng tháng</p>
+            <h4 class="text-success h4">
+                Thống kê sản phẩm bán ra năm @currentYear
+            </h4>
+            <p class="text-muted">
+                Số lượng laptop được bán theo từng tháng
+            </p>
         </div>
+
         <div class="pb-20 px-3">
-            <canvas id="quizChart" style="width: 100%; height: 350px;"></canvas>
+            <div style="position: relative; height: 350px; width: 100%;">
+                <canvas id="productChart"></canvas>
+            </div>
         </div>
     </div>
 
-    <div class="card-box mb-30 mt-4">
-        <div class="pd-20">
-            <h4 class="text-success h4">Thống kê học viên năm @currentYear</h4>
-            <p class="text-muted">Số học viên minh họa theo từng tháng</p>
-        </div>
-        <div class="pb-20 px-3">
-            <canvas id="studentChart" style="width: 100%; height: 350px;"></canvas>
-        </div>
-    </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -112,26 +157,48 @@
         "Th7", "Th8", "Th9", "Th10", "Th11", "Th12"
     ];
 
-    const quizData = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(monthlyQuizData));
-    const studentData = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(monthlyStudentData));
+    const revenueData = @Html.Raw(
+                System.Text.Json.JsonSerializer.Serialize(monthlyRevenueData)
+                );
 
-    new Chart(document.getElementById("quizChart"), {
+    const productData = @Html.Raw(
+                System.Text.Json.JsonSerializer.Serialize(monthlyProductData)
+                );
+
+    new Chart(document.getElementById("revenueChart"), {
         type: "line",
         data: {
             labels: monthLabels,
             datasets: [{
-                label: "Số bài kiểm tra",
-                data: quizData,
+                label: "Doanh thu (triệu VNĐ)",
+                data: revenueData,
                 borderColor: "#007bff",
                 backgroundColor: "rgba(0,123,255,0.15)",
                 borderWidth: 3,
                 fill: true,
-                tension: 0.35
+                tension: 0.35,
+                pointRadius: 4,
+                pointHoverRadius: 6
             }]
         },
         options: {
             responsive: true,
             maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: true,
+                    position: "top"
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function (context) {
+                            return "Doanh thu: " +
+                                context.parsed.y.toLocaleString("vi-VN") +
+                                " triệu VNĐ";
+                        }
+                    }
+                }
+            },
             scales: {
                 y: {
                     beginAtZero: true,
@@ -141,23 +208,29 @@
         }
     });
 
-    new Chart(document.getElementById("studentChart"), {
-        type: "line",
+    new Chart(document.getElementById("productChart"), {
+        type: "bar",
         data: {
             labels: monthLabels,
             datasets: [{
-                label: "Số học viên minh họa",
-                data: studentData,
+                label: "Số lượng laptop bán ra",
+                data: productData,
+                backgroundColor: "rgba(40,167,69,0.7)",
                 borderColor: "#28a745",
-                backgroundColor: "rgba(40,167,69,0.15)",
-                borderWidth: 3,
-                fill: true,
-                tension: 0.35
+                borderWidth: 1,
+                borderRadius: 5,
+                maxBarThickness: 35
             }]
         },
         options: {
             responsive: true,
             maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: true,
+                    position: "top"
+                }
+            },
             scales: {
                 y: {
                     beginAtZero: true,

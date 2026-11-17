@@ -1,0 +1,480 @@
+﻿@{
+    ViewData["Title"] = "Chi tiết sản phẩm - GentleShop";
+    Layout = "~/Views/Shared/_Layout.cshtml"; 
+}
+
+<div class="bg-white border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+        <nav class="flex items-center gap-2 text-xs font-medium text-slate-500 overflow-x-auto whitespace-nowrap">
+            <a href="index.html" class="hover:text-red-600 transition-colors no-underline">Trang chủ</a>
+            <span>/</span>
+            <a asp-controller="Product" asp-action="Index" class="hover:text-red-600 transition-colors no-underline">Laptop</a>
+            <span>/</span>
+            <a asp-controller="Product" asp-action="Index" class="hover:text-red-600 transition-colors no-underline">Apple MacBook</a>
+            <span>/</span>
+            <span class="text-slate-800 font-semibold truncate">MacBook Pro 14 inch M3 Pro (2024)</span>
+        </nav>
+    </div>
+</div>
+
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+    <div class="bg-white rounded-2xl border border-slate-200/80 shadow-xs p-4 sm:p-6 lg:p-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10">
+
+            <div class="lg:col-span-5 flex flex-col gap-4">
+                <div class="relative group aspect-square bg-slate-50 rounded-2xl border border-slate-200/80 overflow-hidden flex items-center justify-center">
+                    <span id="discount-badge"
+                          class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-red-600 text-white text-xs font-extrabold rounded-lg shadow-xs">
+                        -12%
+                    </span>
+
+                    <img id="main-product-image"
+                         src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80"
+                         alt="MacBook Pro 14"
+                         class="w-full h-full object-contain p-4 transition-all duration-300" />
+
+                    <!-- Nút Prev -->
+                    <button type="button" onclick="prevSlide()"
+                            class="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/90 hover:bg-red-600 text-slate-700 hover:text-white border border-slate-200 shadow-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all cursor-pointer">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+
+                    <!-- Nút Next -->
+                    <button type="button" onclick="nextSlide()"
+                            class="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/90 hover:bg-red-600 text-slate-700 hover:text-white border border-slate-200 shadow-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all cursor-pointer">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+
+                    <!-- Chỉ số ảnh -->
+                    <div id="slide-counter"
+                         class="absolute bottom-3 right-3 px-2.5 py-1 rounded-full bg-slate-900/70 text-white text-[11px] font-bold">
+                        1 / 4
+                    </div>
+                </div>
+
+                <!-- Danh sách Thumbnail -->
+                <div id="thumbnail-list" class="grid grid-cols-4 gap-2.5 sm:gap-3">
+                    <!-- Render bằng JS -->
+                </div>
+
+                <!-- Cam kết dịch vụ ngắn -->
+                <div class="grid grid-cols-2 gap-2.5 pt-2">
+                    <div class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-50 border border-slate-100">
+                        <div class="w-8 h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center shrink-0">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-700 leading-tight">Bảo hành chính hãng 12 tháng</span>
+                    </div>
+                    <div class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-50 border border-slate-100">
+                        <div class="w-8 h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center shrink-0">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                            </svg>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-700 leading-tight">Lỗi 1 đổi 1 trong 30 ngày</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CỘT PHẢI: THÔNG TIN & CHỌN BIẾN THỂ (7 cột) -->
+            <div class="lg:col-span-7 flex flex-col">
+                <!-- Thương hiệu & Đánh giá -->
+                <div class="flex flex-wrap items-center gap-3 mb-2">
+                    <span class="px-2.5 py-0.5 rounded-md bg-red-50 text-red-600 text-xs font-extrabold uppercase tracking-wider">
+                        Apple Chính Hãng
+                    </span>
+                    <span class="text-xs text-slate-400 font-medium">SKU: <strong id="product-sku" class="text-slate-700">MBP14-M3P-BLK-18</strong></span>
+                    <span class="text-slate-300">|</span>
+                    <div class="flex items-center gap-1 text-amber-400 text-xs">
+                        ★★★★★ <span class="text-slate-500 font-semibold ml-1">(48 đánh giá)</span>
+                    </div>
+                </div>
+
+                <!-- Tên sản phẩm -->
+                <h1 class="text-xl sm:text-2xl lg:text-[26px] font-extrabold text-slate-900 leading-snug mb-3">
+                    Laptop Apple MacBook Pro 14 inch M3 Pro (18GB RAM / 512GB SSD) - Chính hãng Apple Việt Nam
+                </h1>
+
+                <!-- Khu vực Giá -->
+                <div class="bg-slate-50 border border-slate-200/70 rounded-2xl p-4 sm:p-5 mb-6">
+                    <div class="flex flex-wrap items-baseline gap-3">
+                        <span id="current-price" class="text-2xl sm:text-3xl font-black text-red-600 tracking-tight">
+                            46.990.000₫
+                        </span>
+                        <span id="original-price" class="text-sm sm:text-base text-slate-400 line-through font-semibold">
+                            52.990.000₫
+                        </span>
+                        <span id="save-amount" class="px-2 py-0.5 rounded-md bg-red-100 text-red-700 text-xs font-bold">
+                            Tiết kiệm 6.000.000₫
+                        </span>
+                    </div>
+                    <div class="mt-2 flex items-center gap-2 text-xs">
+                        <span id="stock-status" class="inline-flex items-center gap-1.5 font-bold text-emerald-600">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                            Còn hàng (Sẵn sàng giao ngay)
+                        </span>
+                        <span class="text-slate-300">•</span>
+                        <span class="text-slate-500 font-medium">Giá đã bao gồm VAT</span>
+                    </div>
+                </div>
+
+                <!-- BIẾN THỂ 1: CHỌN CẤU HÌNH -->
+                <div class="mb-5">
+                    <div class="flex items-center justify-between mb-2.5">
+                        <span class="text-xs font-extrabold uppercase tracking-wider text-slate-700">
+                            Phiên bản cấu hình: <span id="selected-spec-label" class="text-red-600 normal-case font-bold">18GB / 512GB SSD</span>
+                        </span>
+                    </div>
+                    <div id="spec-options" class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+                        <button type="button" data-spec="18GB / 512GB SSD" data-price="46990000" data-old="52990000" data-sku="MBP14-M3P-18-512"
+                                class="spec-btn active-variant text-left p-3 rounded-xl border-2 border-red-600 bg-red-50/40 transition-all cursor-pointer">
+                            <div class="text-xs font-extrabold text-slate-900">18GB / 512GB SSD</div>
+                            <div class="text-xs font-bold text-red-600 mt-0.5">46.990.000₫</div>
+                        </button>
+
+                        <button type="button" data-spec="18GB / 1TB SSD" data-price="53490000" data-old="59990000" data-sku="MBP14-M3P-18-1TB"
+                                class="spec-btn text-left p-3 rounded-xl border border-slate-200 hover:border-red-400 bg-white transition-all cursor-pointer">
+                            <div class="text-xs font-extrabold text-slate-900">18GB / 1TB SSD</div>
+                            <div class="text-xs font-bold text-slate-600 mt-0.5">53.490.000₫</div>
+                        </button>
+
+                        <button type="button" data-spec="36GB / 1TB SSD" data-price="62990000" data-old="69990000" data-sku="MBP14-M3P-36-1TB"
+                                class="spec-btn text-left p-3 rounded-xl border border-slate-200 hover:border-red-400 bg-white transition-all cursor-pointer">
+                            <div class="text-xs font-extrabold text-slate-900">36GB / 1TB SSD</div>
+                            <div class="text-xs font-bold text-slate-600 mt-0.5">62.990.000₫</div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2 border-t border-slate-100">
+                    <!-- Bộ chọn số lượng -->
+                    <div class="flex items-center justify-between sm:justify-start border border-slate-200 rounded-xl bg-slate-50 px-2 h-12 shrink-0">
+                        <button type="button" onclick="updateQty(-1)"
+                                class="w-8 h-8 flex items-center justify-center text-slate-600 hover:text-red-600 font-bold text-lg cursor-pointer">
+                            −
+                        </button>
+                        <input id="qty-input" type="number" value="1" min="1" max="10" readonly
+                               class="w-10 text-center bg-transparent font-extrabold text-sm text-slate-800 outline-none" />
+                        <button type="button" onclick="updateQty(1)"
+                                class="w-8 h-8 flex items-center justify-center text-slate-600 hover:text-red-600 font-bold text-lg cursor-pointer">
+                            +
+                        </button>
+                    </div>
+
+                    <!-- Nút Thêm vào giỏ -->
+                    <button type="button" onclick="addToCart()"
+                            class="flex-1 h-12 px-5 rounded-xl border-2 border-red-600 bg-red-50 hover:bg-red-100 text-red-600 font-extrabold text-sm flex items-center justify-center gap-2 transition-all cursor-pointer">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                            <circle cx="8" cy="21" r="1"></circle>
+                            <circle cx="19" cy="21" r="1"></circle>
+                            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+                        </svg>
+                        Thêm vào giỏ hàng
+                    </button>
+
+                    <!-- Nút Mua ngay -->
+                    <button type="button" onclick="buyNow()"
+                            class="flex-1 h-12 px-6 rounded-xl bg-red-600 hover:bg-red-700 text-white font-extrabold text-sm shadow-sm hover:shadow-md transition-all cursor-pointer">
+                        MUA NGAY
+                    </button>
+                </div>
+
+                <!-- Khuyến mãi đi kèm -->
+                <div class="mt-6 rounded-2xl border border-red-200 bg-red-50/40 p-4">
+                    <div class="flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-red-600 mb-2.5">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+                        </svg>
+                        Ưu đãi độc quyền tại GentleShop
+                    </div>
+                    <ul class="space-y-1.5 text-xs text-slate-700 font-medium">
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-600 font-bold">✓</span>
+                            <span>Tặng Balo Laptop cao cấp trị giá <strong>890.000₫</strong> + Chuột không dây.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-600 font-bold">✓</span>
+                            <span>Giảm thêm <strong>500.000₫</strong> khi thanh toán qua VNPay-QR hoặc thẻ tín dụng.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-600 font-bold">✓</span>
+                            <span>Hỗ trợ trả góp 0% lãi suất qua thẻ tín dụng kỳ hạn 6 - 12 tháng.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MÔ TẢ CHI TIẾT & THÔNG SỐ KỸ THUẬT -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-6">
+        <!-- Bài viết đánh giá (7 cột) -->
+        <div class="lg:col-span-7 bg-white rounded-2xl border border-slate-200/80 shadow-xs p-5 sm:p-7">
+            <h2 class="text-base sm:text-lg font-extrabold text-slate-900 uppercase tracking-wide pb-3 mb-4 border-b border-slate-100">
+                Đặc điểm nổi bật
+            </h2>
+            <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+                <p>
+                    <strong class="text-slate-800">Hiệu năng bứt phá với chip Apple M3 Pro:</strong> Được sản xuất trên tiến trình 3nm tiên tiến, mang lại tốc độ xử lý đồ họa và biên tập video 4K/8K mượt mà, tiết kiệm điện năng vượt trội.
+                </p>
+                <p>
+                    <strong class="text-slate-800">Màn hình Liquid Retina XDR 14.2 inch:</strong> Độ sáng XDR lên đến 1000 nits liên tục, tần số quét ProMotion 120Hz siêu mượt cùng độ chuẩn màu tuyệt đối cho nhà sáng tạo nội dung.
+                </p>
+                <p>
+                    <strong class="text-slate-800">Thời lượng pin lên đến 18 giờ:</strong> Thoải mái làm việc cả ngày dài mà không cần mang theo bộ sạc cồng kềnh.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bảng thông số kỹ thuật (5 cột) -->
+        <div class="lg:col-span-5 bg-white rounded-2xl border border-slate-200/80 shadow-xs p-5 sm:p-7">
+            <h2 class="text-base sm:text-lg font-extrabold text-slate-900 uppercase tracking-wide pb-3 mb-4 border-b border-slate-100">
+                Thông số kỹ thuật
+            </h2>
+            <div class="divide-y divide-slate-100 text-xs sm:text-sm">
+                <div class="py-2.5 flex justify-between gap-4">
+                    <span class="text-slate-500 font-medium">CPU</span>
+                    <span class="text-slate-800 font-bold text-right">Apple M3 Pro (11-core CPU)</span>
+                </div>
+                <div class="py-2.5 flex justify-between gap-4">
+                    <span class="text-slate-500 font-medium">GPU</span>
+                    <span class="text-slate-800 font-bold text-right">14-core GPU</span>
+                </div>
+                <div class="py-2.5 flex justify-between gap-4">
+                    <span class="text-slate-500 font-medium">RAM</span>
+                    <span id="spec-table-ram" class="text-slate-800 font-bold text-right">18GB Unified Memory</span>
+                </div>
+                <div class="py-2.5 flex justify-between gap-4">
+                    <span class="text-slate-500 font-medium">Ổ cứng</span>
+                    <span id="spec-table-ssd" class="text-slate-800 font-bold text-right">512GB SSD</span>
+                </div>
+                <div class="py-2.5 flex justify-between gap-4">
+                    <span class="text-slate-500 font-medium">Màn hình</span>
+                    <span class="text-slate-800 font-bold text-right">14.2" Liquid Retina XDR 120Hz</span>
+                </div>
+                <div class="py-2.5 flex justify-between gap-4">
+                    <span class="text-slate-500 font-medium">Cổng kết nối</span>
+                    <span class="text-slate-800 font-bold text-right">3x Thunderbolt 4, HDMI, SDXC, MagSafe 3</span>
+                </div>
+                <div class="py-2.5 flex justify-between gap-4">
+                    <span class="text-slate-500 font-medium">Trọng lượng</span>
+                    <span class="text-slate-800 font-bold text-right">1.61 kg</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SẢN PHẨM LIÊN QUAN -->
+    <div class="mt-10">
+        <div class="flex items-center justify-between mb-5">
+            <div class="flex items-center gap-2.5">
+                <span class="w-1.5 h-6 bg-red-600 rounded-full"></span>
+                <h2 class="text-lg sm:text-xl font-extrabold text-slate-900 uppercase tracking-tight">
+                    Sản phẩm liên quan
+                </h2>
+            </div>
+            <a asp-controller="Product" asp-action="Index"
+               class="text-xs sm:text-sm font-bold text-red-600 hover:text-red-700 flex items-center gap-1 no-underline">
+                Xem tất cả
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <!-- Card 1 -->
+            <a href="#" class="group bg-white rounded-2xl border border-slate-200/80 hover:border-red-300 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col overflow-hidden no-underline">
+                <div class="relative aspect-4/3 bg-slate-50 p-4 flex items-center justify-center overflow-hidden">
+                    <span class="absolute top-2.5 left-2.5 px-2 py-0.5 bg-red-600 text-white text-[10px] font-extrabold rounded-md">-10%</span>
+                    <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=600&q=80"
+                         alt="MacBook Air M3"
+                         class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" />
+                </div>
+                <div class="p-4 flex-1 flex flex-col">
+                    <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1">Apple</span>
+                    <h3 class="text-sm font-bold text-slate-800 group-hover:text-red-600 line-clamp-2 transition-colors mb-2">
+                        MacBook Air 13 inch M3 2024 (16GB / 256GB SSD)
+                    </h3>
+                    <div class="mt-auto pt-2 border-t border-slate-100">
+                        <div class="text-base font-black text-red-600">27.490.000₫</div>
+                        <div class="text-xs text-slate-400 line-through">30.490.000₫</div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 2 -->
+            <a href="#" class="group bg-white rounded-2xl border border-slate-200/80 hover:border-red-300 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col overflow-hidden no-underline">
+                <div class="relative aspect-4/3 bg-slate-50 p-4 flex items-center justify-center overflow-hidden">
+                    <span class="absolute top-2.5 left-2.5 px-2 py-0.5 bg-red-600 text-white text-[10px] font-extrabold rounded-md">-15%</span>
+                    <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=600&q=80"
+                         alt="Dell XPS 13"
+                         class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" />
+                </div>
+                <div class="p-4 flex-1 flex flex-col">
+                    <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1">Dell</span>
+                    <h3 class="text-sm font-bold text-slate-800 group-hover:text-red-600 line-clamp-2 transition-colors mb-2">
+                        Dell XPS 13 9340 Core Ultra 7 155H (16GB / 512GB)
+                    </h3>
+                    <div class="mt-auto pt-2 border-t border-slate-100">
+                        <div class="text-base font-black text-red-600">38.990.000₫</div>
+                        <div class="text-xs text-slate-400 line-through">45.990.000₫</div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="#" class="group bg-white rounded-2xl border border-slate-200/80 hover:border-red-300 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col overflow-hidden no-underline">
+                <div class="relative aspect-4/3 bg-slate-50 p-4 flex items-center justify-center overflow-hidden">
+                    <span class="absolute top-2.5 left-2.5 px-2 py-0.5 bg-amber-500 text-white text-[10px] font-extrabold rounded-md">Hot</span>
+                    <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=600&q=80"
+                         alt="ASUS ROG Zephyrus"
+                         class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" />
+                </div>
+                <div class="p-4 flex-1 flex flex-col">
+                    <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1">ASUS ROG</span>
+                    <h3 class="text-sm font-bold text-slate-800 group-hover:text-red-600 line-clamp-2 transition-colors mb-2">
+                        ASUS ROG Zephyrus G14 OLED Ryzen 9 / RTX 4060
+                    </h3>
+                    <div class="mt-auto pt-2 border-t border-slate-100">
+                        <div class="text-base font-black text-red-600">44.990.000₫</div>
+                        <div class="text-xs text-slate-400 line-through">49.990.000₫</div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 4 -->
+            <a href="#" class="group bg-white rounded-2xl border border-slate-200/80 hover:border-red-300 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col overflow-hidden no-underline">
+                <div class="relative aspect-4/3 bg-slate-50 p-4 flex items-center justify-center overflow-hidden">
+                    <span class="absolute top-2.5 left-2.5 px-2 py-0.5 bg-red-600 text-white text-[10px] font-extrabold rounded-md">-8%</span>
+                    <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=600&q=80"
+                         alt="Lenovo ThinkPad X1"
+                         class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" />
+                </div>
+                <div class="p-4 flex-1 flex flex-col">
+                    <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1">Lenovo</span>
+                    <h3 class="text-sm font-bold text-slate-800 group-hover:text-red-600 line-clamp-2 transition-colors mb-2">
+                        Lenovo ThinkPad X1 Carbon Gen 12 Ultra 7 (32GB / 1TB)
+                    </h3>
+                    <div class="mt-auto pt-2 border-t border-slate-100">
+                        <div class="text-base font-black text-red-600">49.490.000₫</div>
+                        <div class="text-xs text-slate-400 line-through">53.990.000₫</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Toast thông báo thêm giỏ hàng -->
+<div id="toast-notify"
+     class="fixed bottom-5 right-5 z-50 translate-y-20 opacity-0 pointer-events-none transition-all duration-300 bg-slate-900 text-white px-4 py-3 rounded-xl shadow-xl border border-slate-700 flex items-center gap-3 text-xs sm:text-sm font-semibold">
+    <span class="w-6 h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold">✓</span>
+    <span id="toast-message">Đã thêm sản phẩm vào giỏ hàng!</span>
+</div>
+
+<script>
+    const productImages = [
+        "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=80"
+    ];
+
+    let currentSlide = 0;
+
+    function renderThumbnails() {
+        const container = document.getElementById("thumbnail-list");
+        container.innerHTML = productImages.map((src, idx) => `
+                <button type="button" onclick="goToSlide(${idx})"
+                    class="aspect-square rounded-xl bg-slate-50 p-1.5 border-2 transition-all overflow-hidden cursor-pointer ${idx === currentSlide ? 'border-red-600 ring-2 ring-red-100' : 'border-slate-200 hover:border-red-300'}">
+                    <img src="${src}" alt="Thumb ${idx + 1}" class="w-full h-full object-contain rounded-lg" />
+                </button>
+            `).join("");
+    }
+
+    function goToSlide(index) {
+        currentSlide = (index + productImages.length) % productImages.length;
+        const mainImg = document.getElementById("main-product-image");
+        mainImg.style.opacity = "0.4";
+        setTimeout(() => {
+            mainImg.src = productImages[currentSlide];
+            mainImg.style.opacity = "1";
+        }, 120);
+        document.getElementById("slide-counter").textContent = `${currentSlide + 1} / ${productImages.length}`;
+        renderThumbnails();
+    }
+
+    function nextSlide() { goToSlide(currentSlide + 1); }
+    function prevSlide() { goToSlide(currentSlide - 1); }
+
+    const formatVND = (num) => Number(num).toLocaleString("vi-VN") + "₫";
+
+    document.querySelectorAll(".spec-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+            document.querySelectorAll(".spec-btn").forEach(b => {
+                b.classList.remove("border-2", "border-red-600", "bg-red-50/40");
+                b.classList.add("border", "border-slate-200", "bg-white");
+            });
+            btn.classList.remove("border", "border-slate-200", "bg-white");
+            btn.classList.add("border-2", "border-red-600", "bg-red-50/40");
+
+            const spec = btn.dataset.spec;
+            const price = Number(btn.dataset.price);
+            const oldPrice = Number(btn.dataset.old);
+            const sku = btn.dataset.sku;
+            const discountPercent = Math.round(((oldPrice - price) / oldPrice) * 100);
+
+            document.getElementById("selected-spec-label").textContent = spec;
+            document.getElementById("current-price").textContent = formatVND(price);
+            document.getElementById("original-price").textContent = formatVND(oldPrice);
+            document.getElementById("save-amount").textContent = `Tiết kiệm ${formatVND(oldPrice - price)}`;
+            document.getElementById("discount-badge").textContent = `-${discountPercent}%`;
+            document.getElementById("product-sku").textContent = sku;
+
+            const parts = spec.split("/");
+            if (parts.length === 2) {
+                document.getElementById("spec-table-ram").textContent = parts[0].trim() + " Unified Memory";
+                document.getElementById("spec-table-ssd").textContent = parts[1].trim();
+            }
+        });
+    });
+
+    function updateQty(delta) {
+        const input = document.getElementById("qty-input");
+        let val = parseInt(input.value) + delta;
+        if (val < 1) val = 1;
+        if (val > 10) val = 10;
+        input.value = val;
+    }
+
+    function showToast(msg) {
+        const toast = document.getElementById("toast-notify");
+        document.getElementById("toast-message").textContent = msg;
+        toast.classList.remove("translate-y-20", "opacity-0");
+        setTimeout(() => {
+            toast.classList.add("translate-y-20", "opacity-0");
+        }, 2800);
+    }
+
+    function addToCart() {
+        const spec = document.getElementById("selected-spec-label").textContent;
+        const color = document.getElementById("selected-color-label").textContent;
+        const qty = document.getElementById("qty-input").value;
+        showToast(`Đã thêm ${qty}x MacBook Pro (${spec} - ${color}) vào giỏ!`);
+    }
+
+    function buyNow() {
+        addToCart();
+        // window.location.href = '/Cart/Checkout';
+    }
+
+    // Khởi tạo slider
+    renderThumbnails();
+</script>

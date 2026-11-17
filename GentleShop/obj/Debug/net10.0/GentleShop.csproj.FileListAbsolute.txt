@@ -420,3 +420,4 @@ D:\Documents\GentleShop\GentleShop\obj\Debug\net10.0\compressed\n4jvid89oq-{0}-6
 D:\Documents\GentleShop\GentleShop\obj\Debug\net10.0\compressed\a79g6z490i-{0}-eild1y7a2h-eild1y7a2h.gz
 D:\Documents\GentleShop\GentleShop\obj\Debug\net10.0\compressed\z9c9t8j480-{0}-ak4b5inmb1-ak4b5inmb1.gz
 D:\Documents\GentleShop\GentleShop\obj\Debug\net10.0\compressed\e8xq85qst7-{0}-ak4b5inmb1-ak4b5inmb1.gz
+D:\Documents\GentleShop\GentleShop\obj\Debug\net10.0\compressed\pzobn5jg63-{0}-5ipweew5fc-5ipweew5fc.gz

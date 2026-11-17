@@ -1,50 +1,228 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="vi" class="scroll-smooth">
+
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - GentleShop</title>
-    <script type="importmap"></script>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/GentleShop.styles.css" asp-append-version="true" />
+    <title>GentleShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+          rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">GentleShop</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+
+<body class="min-h-screen bg-slate-50 text-slate-800 antialiased flex flex-col"
+      style="font-family: 'Inter', sans-serif;">
+    <header id="top" class="sticky top-0 z-50 w-full bg-white shadow-xs">
+        <div class="bg-red-700 text-white text-center py-2 px-4 text-xs font-semibold tracking-wide">
+            Hỗ trợ trực tuyến 24/7. Hotline: <span class="font-bold">0123 456 789</span>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white">
+            <div class="flex items-center justify-between h-16 sm:h-20 gap-4">
+                <a href="index.html" class="flex items-center gap-2 cursor-pointer group shrink-0 select-none no-underline">
+                    <div class="px-3 py-1.5 bg-red-600 group-hover:bg-red-700 rounded-lg text-white font-extrabold text-lg tracking-tight transition-colors">
+                        GS
+                    </div>
+                    <span class="text-xl font-bold tracking-tight text-red-600 group-hover:text-red-700 transition-colors">
+                        GentleShop
+                    </span>
+                </a>
+
+                <div class="hidden md:flex items-center flex-1 max-w-xl mx-8 relative">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm, thương hiệu..."
+                           class="w-full pl-6 pr-12 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-full focus:bg-white text-slate-800 focus:border-red-500 outline-none transition-all duration-300" />
+                    <a href="products.html" title="Tìm kiếm sản phẩm"
+                       class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-red-500 transition-colors cursor-pointer">
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                             stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="hidden md:flex items-center gap-8 shrink-0">
+                    <div class="relative group" tabindex="0">
+                        <div class="flex flex-col items-center justify-center cursor-pointer focus:outline-none select-none">
+                            <div class="w-8 h-8 bg-rose-50 text-rose-600 border border-rose-100 rounded-full flex items-center justify-center font-extrabold text-sm group-hover:bg-rose-100 transition-all duration-300">
+                                H
+                            </div>
+                            <span class="text-[10px] font-bold text-slate-600 group-hover:text-red-600 mt-1 truncate max-w-[90px] transition-colors">
+                                Trung Hiếu
+                            </span>
+                        </div>
+
+                        <div class="absolute right-0 top-full pt-2 w-64 opacity-0 invisible translate-y-1.5 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 transition-all duration-200 z-40">
+                            <div class="bg-white rounded-2xl border border-slate-200/80 shadow-xl py-3 text-left">
+                                <div class="px-4 py-2 flex flex-col gap-0.5">
+                                    <span class="font-bold text-slate-800 text-sm truncate">Trung Hiếu</span>
+                                    <span class="text-xs text-slate-400 font-medium truncate">trunghieu@GentleShop.vn</span>
+                                </div>
+                                <div class="border-t border-slate-100 my-2"></div>
+                                <div class="flex flex-col">
+                                    <a href="#profile"
+                                       class="flex items-center gap-3 px-4 py-2.5 text-sm text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors font-semibold">
+                                        Hồ
+                                        sơ của tôi
+                                    </a>
+                                    <a href="#orders"
+                                       class="flex items-center gap-3 px-4 py-2.5 text-sm text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors font-semibold">
+                                        Đơn
+                                        hàng của tôi
+                                    </a>
+                                    <a href="#admin"
+                                       class="flex items-center gap-3 px-4 py-2.5 text-sm text-purple-600 hover:bg-purple-50/50 transition-colors font-bold">
+                                        Trang
+                                        quản trị
+                                    </a>
+                                </div>
+                                <div class="border-t border-slate-100 my-2"></div>
+                                <a href="#logout"
+                                   class="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-red-600 hover:bg-red-50/50 transition-colors font-bold">
+                                    Đăng
+                                    xuất
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#cart"
+                       class="relative flex flex-col items-center justify-center text-slate-700 hover:text-red-600 transition-all duration-300 group no-underline">
+                        <div class="relative">
+                            <svg class="w-6 h-6 text-slate-700 group-hover:text-red-600 transition-colors" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="8" cy="21" r="1"></circle>
+                                <circle cx="19" cy="21" r="1"></circle>
+                                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+                            </svg>
+                            <span class="absolute -top-2 -right-2.5 flex items-center justify-center min-w-5 h-5 px-1.5 text-[10px] font-extrabold text-white bg-amber-500 rounded-full border-2 border-white">3</span>
+                        </div>
+                        <span class="text-[10px] font-bold text-slate-500 group-hover:text-red-600 mt-1 transition-colors">
+                            Giỏ
+                            hàng
+                        </span>
+                    </a>
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2026 - GentleShop - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+
+        <div class="border-t border-slate-100 bg-white border-b-2 border-red-600">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-11 sm:h-12">
+                    <div class="flex items-center gap-6 lg:gap-8 text-xs sm:text-sm font-bold overflow-x-auto no-scrollbar">
+                        <a href="products.html"
+                           class="flex items-center gap-2 text-red-600 uppercase tracking-wide cursor-pointer py-2 hover:opacity-85 transition-all shrink-0 select-none no-underline">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                                <line x1="4" x2="20" y1="12" y2="12" />
+                                <line x1="4" x2="20" y1="6" y2="6" />
+                                <line x1="4" x2="20" y1="18" y2="18" />
+                            </svg>
+                            <span>Danh mục sản phẩm</span>
+                        </a>
+                        <nav class="hidden md:flex items-center gap-6 lg:gap-7 text-slate-700 uppercase tracking-wide">
+                            <a href="index.html" class="text-red-600 transition-colors cursor-pointer py-1 no-underline">Trang chủ</a>
+                            <a asp-controller="Product"
+                               asp-action="Index" class="hover:text-red-600 transition-colors cursor-pointer py-1 no-underline">
+                                Sản
+                                phẩm
+                            </a>
+                            <a asp-controller="Product"
+                               asp-action="Index"
+                               class="hover:text-red-600 transition-colors cursor-pointer py-1 no-underline">Laptop</a>
+                            <a asp-controller="Product"
+                               asp-action="Index" class="hover:text-red-600 transition-colors cursor-pointer py-1 no-underline">
+                                Văn Phòng
+                            </a>
+                            <a asp-controller="Product"
+                               asp-action="Index" class="hover:text-red-600 transition-colors cursor-pointer py-1 no-underline">
+                                Gaming
+                            </a>
+                            
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-1 bg-slate-50 text-slate-800">
+        @RenderBody()
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 border-t border-slate-800 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 pb-10 border-b border-slate-800">
+                <div>
+                    <a href="index.html" class="flex items-center gap-2 mb-4 cursor-pointer select-none no-underline">
+                        <div class="px-2.5 py-1 bg-red-600 rounded-lg text-white font-extrabold text-base">TS</div>
+                        <span class="text-lg font-bold text-white">GentleShop</span>
+                    </a>
+                    <p class="text-xs leading-relaxed text-slate-400 mb-4">
+                        Hệ thống bán lẻ Laptop chính hãng, PC Gaming, Linh kiện
+                        &amp; Phụ kiện công nghệ uy tín hàng đầu Việt Nam.
+                    </p>
+                    <p class="text-xs font-semibold text-slate-300">
+                        Hotline 24/7: <span class="text-red-400 font-bold">
+                        0123 456
+                        789
+                    </span>
+                </p>
+            </div>
+            <div>
+                <h4 class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">Danh mục sản phẩm</h4>
+                <ul class="space-y-2.5 text-xs">
+                    <li>
+                        <a asp-controller="Product"
+                           asp-action="Index" class="hover:text-white no-underline">Laptop Gaming</a>
+                    </li>
+                    <li>
+                        <a asp-controller="Product"
+                           asp-action="Index" class="hover:text-white no-underline">Laptop Văn phòng &amp; Sinh viên</a>
+                    </li>
+                    <li>
+                        <a asp-controller="Product"
+                           asp-action="Index" class="hover:text-white no-underline">Apple MacBook Pro / Air</a>
+                    </li>
+                    <li>
+                        <a asp-controller="Product"
+                           asp-action="Index" class="hover:text-white no-underline">Đồ họa &amp; Workstation</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">Hỗ trợ khách hàng</h4>
+                <ul class="space-y-2.5 text-xs">
+                    <li><a href="#top" class="hover:text-white no-underline">Hướng dẫn mua hàng trực tuyến</a></li>
+                    <li><a href="#top" class="hover:text-white no-underline">Hướng dẫn mua trả góp 0%</a></li>
+                    <li><a href="#top" class="hover:text-white no-underline">Tra cứu thông tin đơn hàng</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">Chính sách &amp; Thanh toán</h4>
+                <ul class="space-y-2.5 text-xs mb-4">
+                    <li><a href="#top" class="hover:text-white no-underline">Chính sách bảo hành chính hãng</a></li>
+                    <li><a href="#top" class="hover:text-white no-underline">Chính sách đổi trả 1-1 trong 30 ngày</a></li>
+                </ul>
+                <div class="flex flex-wrap gap-1.5">
+                    <span class="px-2.5 py-1 rounded-md bg-slate-800 text-[10px] font-bold text-slate-300">VISA</span>
+                    <span class="px-2.5 py-1 rounded-md bg-slate-800 text-[10px] font-bold text-slate-300">MasterCard</span>
+                    <span class="px-2.5 py-1 rounded-md bg-slate-800 text-[10px] font-bold text-slate-300">VNPay</span>
+                </div>
+            </div>
+        </div>
+        <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+            <p>&copy; 2026 GentleShop Vietnam. Bảo lưu mọi quyền.</p>
+            <div class="flex items-center gap-5">
+                <a href="index.html" class="hover:text-slate-300 no-underline">Trang chủ</a>
+                <a asp-controller="Product"
+                   asp-action="Index" class="hover:text-slate-300 no-underline">Sản phẩm</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
 </body>
+
 </html>

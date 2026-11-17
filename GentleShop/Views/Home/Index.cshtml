@@ -1,8 +1,354 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<!-- 1. Big Hero Banner -->
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+    <section class="relative overflow-hidden bg-slate-950 py-20 lg:py-28 px-6 lg:px-16 rounded-3xl">
+        <div class="absolute inset-0 z-0 opacity-40">
+            <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=1600&q=80"
+                 alt="Hero Laptop Banner" class="w-full h-full object-cover object-center" />
+            <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-transparent"></div>
+        </div>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 text-left max-w-2xl">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-bold tracking-wider uppercase text-amber-300 bg-amber-400/10 rounded-full border border-amber-300/30">
+                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                    </svg>
+                    Laptop chính hãng 100%
+                </span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                    Đỉnh Cao Hiệu Năng <br />
+                    <span class="bg-gradient-to-r from-violet-400 via-indigo-400 to-cyan-400 bg-clip-text text-transparent">
+                        Vượt Mọi Giới Hạn
+                    </span>
+                </h1>
+                <p class="text-base sm:text-lg text-slate-300 leading-relaxed">
+                    Trải nghiệm các dòng máy tính xách tay cấu hình cực đại thế hệ mới nhất. Nhận tư vấn dòng máy phù hợp nhất
+                    ngay hôm nay!
+                </p>
+                <div class="flex flex-wrap items-center gap-4">
+                    <a href="#featured-products"
+                       class="inline-block px-8 py-3.5 text-sm font-bold text-slate-950 bg-gradient-to-r from-amber-300 to-amber-400 hover:from-amber-400 hover:to-amber-500 rounded-xl shadow-lg transition-all no-underline">
+                        Mua ngay hôm nay
+                    </a>
+                    <a href="products.html"
+                       class="inline-flex items-center gap-2 px-6 py-3.5 text-sm font-bold text-white bg-white/10 hover:bg-white/20 border border-white/15 rounded-xl transition-all no-underline">
+                        <span>Khám phá kho laptop</span>
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                            <polyline points="9 18 15 12 9 6" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
+
+<!-- 2. Three Sub-Category / Promo Banners -->
+<section class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto -mt-10 relative z-20">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <a href="products.html"
+           class="group relative h-48 rounded-2xl overflow-hidden shadow-lg cursor-pointer transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl block no-underline">
+            <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=800&q=80"
+                 alt="Laptop Gaming"
+                 class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/45 to-transparent"></div>
+            <div class="absolute bottom-5 left-5 right-5 text-left">
+                <span class="text-[10px] font-extrabold tracking-wider uppercase text-rose-400">Gaming &amp; Đồ Họa</span>
+                <h3 class="text-lg font-bold text-white mt-1">Cấu Hình Chiến Game</h3>
+                <p class="text-xs text-slate-300 mt-1 line-clamp-1">
+                    Trang bị GPU RTX thế hệ mới, màn hình tần số quét cực
+                    cao.
+                </p>
+            </div>
+        </a>
+
+        <a href="products.html"
+           class="group relative h-48 rounded-2xl overflow-hidden shadow-lg cursor-pointer transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl block no-underline">
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80"
+                 alt="Laptop Văn Phòng"
+                 class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/45 to-transparent"></div>
+            <div class="absolute bottom-5 left-5 right-5 text-left">
+                <span class="text-[10px] font-extrabold tracking-wider uppercase text-emerald-400">
+                    Văn Phòng &amp; Sinh
+                    Viên
+                </span>
+                <h3 class="text-lg font-bold text-white mt-1">Mỏng Nhẹ &amp; Sang Trọng</h3>
+                <p class="text-xs text-slate-300 mt-1 line-clamp-1">Thời lượng pin bền bỉ, màn hình sắc nét siêu mỏng.</p>
+            </div>
+        </a>
+
+        <a href="products.html"
+           class="group relative h-48 rounded-2xl overflow-hidden shadow-lg cursor-pointer transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl block no-underline">
+            <img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=800&q=80"
+                 alt="Workstation"
+                 class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/45 to-transparent"></div>
+            <div class="absolute bottom-5 left-5 right-5 text-left">
+                <span class="text-[10px] font-extrabold tracking-wider uppercase text-amber-400">Workstation</span>
+                <h3 class="text-lg font-bold text-white mt-1">Sáng Tạo Không Giới Hạn</h3>
+                <p class="text-xs text-slate-300 mt-1 line-clamp-1">
+                    Độ phủ màu tuyệt đối 100% sRGB/DCI-P3, CPU đa nhân xử lý
+                    mượt mà.
+                </p>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- 3. Featured Products (5 items grid) -->
+<section id="featured-products" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="flex items-center justify-between mb-10">
+        <div>
+            <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900">Sản phẩm nổi bật</h2>
+            <p class="text-sm text-slate-500 mt-1">Danh sách laptop hàng đầu được khách hàng săn đón nhất</p>
+        </div>
+        <a href="products.html"
+           class="flex items-center gap-1 text-sm font-bold text-indigo-600 hover:text-indigo-700 hover:underline transition-all no-underline shrink-0">
+            <span>Xem tất cả</span>
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <polyline points="9 18 15 12 9 6" />
+            </svg>
+        </a>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <!-- Product 1 -->
+        <article class="group bg-white rounded-2xl border border-slate-200/80 hover:border-indigo-500/50 hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden">
+            <div class="relative aspect-16/11 bg-slate-100 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=500" alt="ASUS ROG"
+                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <span class="absolute top-2.5 left-2.5 px-2 py-0.5 text-[10px] font-extrabold uppercase bg-white/95 text-slate-800 rounded-md">ASUS</span>
+                <span class="absolute top-2.5 right-2.5 px-2 py-0.5 text-[10px] font-extrabold bg-rose-600 text-white rounded-md">-11%</span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between gap-3">
+                <div>
+                    <h3 class="font-bold text-slate-900 text-sm leading-snug line-clamp-2 group-hover:text-indigo-600 min-h-[2.5rem]">
+                        ASUS ROG Strix G16 (2024)
+                    </h3>
+                    <div class="flex flex-wrap gap-1 mt-2.5">
+                        <span class="px-2 py-0.5 rounded-md bg-slate-100 text-[10px] font-semibold text-slate-600">i9-13980HX</span>
+                        <span class="px-2 py-0.5 rounded-md bg-slate-100 text-[10px] font-semibold text-slate-600">
+                            16GB
+                            DDR5
+                        </span>
+                        <span class="px-2 py-0.5 rounded-md bg-slate-100 text-[10px] font-semibold text-slate-600">
+                            512GB
+                            SSD
+                        </span>
+                    </div>
+                </div>
+                <div class="pt-3 border-t border-slate-100">
+                    <div class="text-[11px] text-slate-400 line-through">36.990.000đ</div>
+                    <div class="text-base font-extrabold text-red-600 mb-2.5">32.990.000đ</div>
+                    <a href="#cart"
+                       class="w-full py-2 px-3 bg-slate-900 hover:bg-indigo-600 text-white text-xs font-bold rounded-xl transition-colors flex items-center justify-center gap-1.5 no-underline">
+                        Thêm
+                        vào giỏ
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="group bg-white rounded-2xl border border-slate-200/80 hover:border-indigo-500/50 hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden">
+            <div class="relative aspect-16/11 bg-slate-100 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500" alt="MacBook Air"
+                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <span class="absolute top-2.5 left-2.5 px-2 py-0.5 text-[10px] font-extrabold uppercase bg-white/95 text-slate-800 rounded-md">Apple</span>
+                <span class="absolute top-2.5 right-2.5 px-2 py-0.5 text-[10px] font-extrabold bg-rose-600 text-white rounded-md">-12%</span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between gap-3">
+                <div>
+                    <h3 class="font-bold text-slate-900 text-sm leading-snug line-clamp-2 group-hover:text-indigo-600 min-h-[2.5rem]">
+                        MacBook Air M3 13 inch (2024)
+                    </h3>
+                    <div class="flex flex-wrap gap-1 mt-2.5">
+                        <span class="px-2 py-0.5 rounded-md bg-slate-100 text-[10px] font-semibold text-slate-600">
+                            Apple
+                            M3
+                        </span>
+                        <span class="px-2 py-0.5 rounded-md bg-slate-100 text-[10px] font-semibold text-slate-600">8GB</span>
+                        <span class="px-2 py-0.5 rounded-md bg-slate-100 text-[10px] font-semibold text-slate-600">
+                            256GB
+                            SSD
+                        </span>
+                    </div>
+                </div>
+                <div class="pt-3 border-t border-slate-100">
+                    <div class="text-[11px] text-slate-400 line-through">32.990.000đ</div>
+                    <div class="text-base font-extrabold text-red-600 mb-2.5">28.990.000đ</div>
+                    <a href="#cart"
+                       class="w-full py-2 px-3 bg-slate-900 hover:bg-indigo-600 text-white text-xs font-bold rounded-xl transition-colors flex items-center justify-center gap-1.5 no-underline">
+                        Thêm
+                        vào giỏ
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="group bg-white rounded-2xl border border-slate-200/80 hover:border-indigo-500/50 hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden">
+            <div class="relative aspect-16/11 bg-slate-100 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=500" alt="Dell XPS"
+                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <span class="absolute top-2.5 left-2.5 px-2 py-0.5 text-[10px] font-extrabold uppercase bg-white/95 text-slate-800 rounded-md">Dell</span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between gap-3">
+                <div>
+                    <h3 class="font-bold text-slate-900 text-sm leading-snug line-clamp-2 group-hover:text-indigo-600 min-h-[2.5rem]">
+                        Dell XPS 15 9530
+                    </h3>
+                    <div class="flex flex-wrap gap-1 mt-2.5">
+                        <span class="px-2 py-0.5 rounded-md bg-slate-100 text-[10px] font-semibold text-slate-600">i7-13700H</span>
+                        <span class="px-2 py-0.5 rounded-md bg-slate-100 text-[10px] font-semibold text-slate-600">
+                            16GB
+                            DDR5
+                        </span>
+                        <span class="px-2 py-0.5 rounded-md bg-slate-100 text-[10px] font-semibold text-slate-600">
+                            1TB
+                            SSD
+                        </span>
+                    </div>
+                </div>
+                <div class="pt-3 border-t border-slate-100">
+                    <div class="text-[11px] text-slate-400 font-medium h-4"></div>
+                    <div class="text-base font-extrabold text-indigo-600 mb-2.5">48.990.000đ</div>
+                    <a href="#cart"
+                       class="w-full py-2 px-3 bg-slate-900 hover:bg-indigo-600 text-white text-xs font-bold rounded-xl transition-colors flex items-center justify-center gap-1.5 no-underline">
+                        Thêm
+                        vào giỏ
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="group bg-white rounded-2xl border border-slate-200/80 hover:border-indigo-500/50 hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden">
+            <div class="relative aspect-16/11 bg-slate-100 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=500" alt="Lenovo Legion"
+                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <span class="absolute top-2.5 left-2.5 px-2 py-0.5 text-[10px] font-extrabold uppercase bg-white/95 text-slate-800 rounded-md">Lenovo</span>
+                <span class="absolute top-2.5 right-2.5 px-2 py-0.5 text-[10px] font-extrabold bg-rose-600 text-white rounded-md">-10%</span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between gap-3">
+                <div>
+                    <h3 class="font-bold text-slate-900 text-sm leading-snug line-clamp-2 group-hover:text-indigo-600 min-h-[2.5rem]">
+                        Lenovo Legion 5 Pro 16IRX8
+                    </h3>
+                    <div class="flex flex-wrap gap-1 mt-2.5">
+                        <span class="px-2 py-0.5 rounded-md bg-slate-100 text-[10px] font-semibold text-slate-600">i7-13700HX</span>
+                        <span class="px-2 py-0.5 rounded-md bg-slate-100 text-[10px] font-semibold text-slate-600">
+                            16GB
+                            DDR5
+                        </span>
+                        <span class="px-2 py-0.5 rounded-md bg-slate-100 text-[10px] font-semibold text-slate-600">
+                            512GB
+                            SSD
+                        </span>
+                    </div>
+                </div>
+                <div class="pt-3 border-t border-slate-100">
+                    <div class="text-[11px] text-slate-400 line-through">38.990.000đ</div>
+                    <div class="text-base font-extrabold text-red-600 mb-2.5">34.990.000đ</div>
+                    <a href="#cart"
+                       class="w-full py-2 px-3 bg-slate-900 hover:bg-indigo-600 text-white text-xs font-bold rounded-xl transition-colors flex items-center justify-center gap-1.5 no-underline">
+                        Thêm
+                        vào giỏ
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Product 5 -->
+        <article class="group bg-white rounded-2xl border border-slate-200/80 hover:border-indigo-500/50 hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden">
+            <div class="relative aspect-16/11 bg-slate-100 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=500" alt="MSI Prestige"
+                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <span class="absolute top-2.5 left-2.5 px-2 py-0.5 text-[10px] font-extrabold uppercase bg-white/95 text-slate-800 rounded-md">MSI</span>
+                <span class="absolute top-2.5 right-2.5 px-2 py-0.5 text-[10px] font-extrabold bg-rose-600 text-white rounded-md">-12%</span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between gap-3">
+                <div>
+                    <h3 class="font-bold text-slate-900 text-sm leading-snug line-clamp-2 group-hover:text-indigo-600 min-h-[2.5rem]">
+                        MSI Prestige 14 Evo
+                    </h3>
+                    <div class="flex flex-wrap gap-1 mt-2.5">
+                        <span class="px-2 py-0.5 rounded-md bg-slate-100 text-[10px] font-semibold text-slate-600">i5-1240P</span>
+                        <span class="px-2 py-0.5 rounded-md bg-slate-100 text-[10px] font-semibold text-slate-600">
+                            16GB
+                            LPDDR5
+                        </span>
+                        <span class="px-2 py-0.5 rounded-md bg-slate-100 text-[10px] font-semibold text-slate-600">
+                            512GB
+                            SSD
+                        </span>
+                    </div>
+                </div>
+                <div class="pt-3 border-t border-slate-100">
+                    <div class="text-[11px] text-slate-400 line-through">24.990.000đ</div>
+                    <div class="text-base font-extrabold text-red-600 mb-2.5">21.990.000đ</div>
+                    <a href="#cart"
+                       class="w-full py-2 px-3 bg-slate-900 hover:bg-indigo-600 text-white text-xs font-bold rounded-xl transition-colors flex items-center justify-center gap-1.5 no-underline">
+                        Thêm
+                        vào giỏ
+                    </a>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-200/50">
+    <div class="text-center max-w-xl mx-auto mb-10">
+        <h2 class="text-2xl font-extrabold tracking-tight text-slate-900">Thương hiệu nổi bật</h2>
+        <p class="text-sm text-slate-500 mt-1">Các hãng laptop uy tín thế giới được phân phối chính hãng</p>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+        <a href="products.html"
+           class="flex flex-col items-center justify-center p-6 bg-white border border-slate-200/60 rounded-3xl hover:border-indigo-500/50 hover:shadow-lg transition-all group no-underline">
+            <div class="w-full h-16 flex items-center justify-center mb-4">
+                <span class="font-bold text-lg text-slate-800 group-hover:text-blue-600">ASUS</span>
+            </div>
+            <h4 class="font-extrabold text-sm text-slate-800">ASUS</h4>
+            <p class="text-[10px] text-slate-400 text-center line-clamp-1 mt-1">Đỉnh cao gaming.</p>
+        </a>
+
+        <a href="products.html"
+           class="flex flex-col items-center justify-center p-6 bg-white border border-slate-200/60 rounded-3xl hover:border-indigo-500/50 hover:shadow-lg transition-all group no-underline">
+            <div class="w-full h-16 flex items-center justify-center mb-4">
+                <span class="font-bold text-lg text-slate-800 group-hover:text-black">Apple</span>
+            </div>
+            <h4 class="font-extrabold text-sm text-slate-800">Apple</h4>
+            <p class="text-[10px] text-slate-400 text-center line-clamp-1 mt-1">Đẳng cấp sang trọng.</p>
+        </a>
+
+        <a href="products.html"
+           class="flex flex-col items-center justify-center p-6 bg-white border border-slate-200/60 rounded-3xl hover:border-indigo-500/50 hover:shadow-lg transition-all group no-underline">
+            <div class="w-full h-16 flex items-center justify-center mb-4">
+                <span class="font-bold text-lg text-slate-800 group-hover:text-blue-600">DELL</span>
+            </div>
+            <h4 class="font-extrabold text-sm text-slate-800">Dell</h4>
+            <p class="text-[10px] text-slate-400 text-center line-clamp-1 mt-1">Bền bỉ vượt trội.</p>
+        </a>
+
+        <a href="products.html"
+           class="flex flex-col items-center justify-center p-6 bg-white border border-slate-200/60 rounded-3xl hover:border-indigo-500/50 hover:shadow-lg transition-all group no-underline">
+            <div class="w-full h-16 flex items-center justify-center mb-4">
+                <span class="font-bold text-lg text-slate-800 group-hover:text-blue-600">HP</span>
+            </div>
+            <h4 class="font-extrabold text-sm text-slate-800">HP</h4>
+            <p class="text-[10px] text-slate-400 text-center line-clamp-1 mt-1">Thiết kế tinh tế.</p>
+        </a>
+
+        <a href="products.html"
+           class="flex flex-col items-center justify-center p-6 bg-white border border-slate-200/60 rounded-3xl hover:border-indigo-500/50 hover:shadow-lg transition-all group no-underline">
+            <div class="w-full h-16 flex items-center justify-center mb-4">
+                <span class="font-bold text-lg text-slate-800 group-hover:text-red-600">MSI</span>
+            </div>
+            <h4 class="font-extrabold text-sm text-slate-800">MSI</h4>
+            <p class="text-[10px] text-slate-400 text-center line-clamp-1 mt-1">Chiến game thực thụ.</p>
+        </a>
+    </div>
+</section>
