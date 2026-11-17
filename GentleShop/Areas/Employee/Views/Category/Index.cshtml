@@ -1,0 +1,283 @@
+﻿@model IEnumerable<GentleShop.Models.Category>
+@Html.AntiForgeryToken()
+@{
+    ViewData["Title"] = "Danh sách danh mục";
+}
+
+<style>
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 24px;
+        margin-bottom: 0;
+    }
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .switch .slider {
+        position: absolute;
+        cursor: pointer;
+        background-color: #ccc;
+        transition: .3s;
+        border-radius: 24px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .switch .slider:before {
+        position: absolute;
+        content: "";
+        height: 18px;
+        width: 18px;
+        left: 3px;
+        bottom: 3px;
+        background-color: white;
+        transition: .3s;
+        border-radius: 50%;
+    }
+
+    .switch input:checked + .slider {
+        background-color: #28a745;
+    }
+
+    .switch input:checked + .slider:before {
+        transform: translateX(26px);
+    }
+
+    .switch input:disabled + .slider {
+        cursor: not-allowed;
+        opacity: .6;
+    }
+
+    .table td {
+        vertical-align: middle;
+    }
+</style>
+
+<div class="pd-ltr-20 xs-pd-20-10">
+    <div class="min-height-200px">
+
+        <div class="page-header">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="title">
+                        <h4>Danh sách danh mục</h4>
+                    </div>
+
+                    <nav aria-label="breadcrumb" role="navigation">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a asp-area="Employee"
+                                   asp-controller="Home"
+                                   asp-action="Index">
+                                    Trang chủ
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                Danh mục
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class="col-md-6 col-sm-12 text-right">
+                    <a asp-area="Employee"
+                       asp-controller="Category"
+                       asp-action="Create"
+                       class="btn btn-primary">
+                        <i class="dw dw-add"></i> Thêm danh mục
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        @if (TempData["Success"] != null)
+        {
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                @TempData["Success"]
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        }
+
+        @if (TempData["Error"] != null)
+        {
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                @TempData["Error"]
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        }
+
+        <div class="card-box mb-30">
+            <div class="pd-20">
+                <h4 class="text-blue h4">Danh sách danh mục</h4>
+            </div>
+
+            <div class="pb-20">
+                <table class="data-table table stripe hover nowrap">
+                    <thead>
+                        <tr>
+                            <th>Mã</th>
+                            <th>Tên danh mục</th>
+                            <th>Mô tả</th>
+                            <th class="datatable-nosort">Thao tác</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @if (Model != null && Model.Any())
+                        {
+                            foreach (var category in Model)
+                            {
+                                <tr>
+                                    <td>@category.Id</td>
+
+                                    <td>@category.Name</td>
+
+                                    <td>
+                                        @(string.IsNullOrWhiteSpace(category.Description)
+                                            ? "Chưa có mô tả"
+                                            : category.Description)
+                                    </td>
+
+                                    <td>
+                                        <a asp-area="Employee"
+                                           asp-controller="Category"
+                                           asp-action="Details"
+                                           asp-route-id="@category.Id"
+                                           class="btn btn-info btn-sm">
+                                            <i class="dw dw-eye"></i>
+                                        </a>
+
+                                        <a asp-area="Employee"
+                                           asp-controller="Category"
+                                           asp-action="Edit"
+                                           asp-route-id="@category.Id"
+                                           class="btn btn-warning btn-sm">
+                                            <i class="dw dw-edit2"></i>
+                                        </a>
+
+                                        <form asp-area="Employee"
+                                              asp-controller="Category"
+                                              asp-action="Delete"
+                                              asp-route-id="@category.Id"
+                                              method="post"
+                                              class="d-inline"
+                                              onsubmit="return confirm('Bạn có chắc chắn muốn xóa danh mục này?');">
+
+                                            @Html.AntiForgeryToken()
+
+                                            <button type="submit"
+                                                    class="btn btn-danger btn-sm">
+                                                <i class="dw dw-delete-3"></i>
+                                            </button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td colspan="4" class="text-center">
+                                    Chưa có danh mục nào.
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/vendors/scripts/core.js"></script>
+<script src="~/vendors/scripts/script.min.js"></script>
+<script src="~/vendors/scripts/process.js"></script>
+<script src="~/vendors/scripts/layout-settings.js"></script>
+<script src="~/src/plugins/datatables/js/jquery.dataTables.min.js"></script>
+<script src="~/src/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
+<script src="~/src/plugins/datatables/js/dataTables.responsive.min.js"></script>
+<script src="~/src/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
+<script src="~/src/plugins/datatables/js/dataTables.buttons.min.js"></script>
+<script src="~/src/plugins/datatables/js/buttons.bootstrap4.min.js"></script>
+<script src="~/src/plugins/datatables/js/buttons.print.min.js"></script>
+<script src="~/src/plugins/datatables/js/buttons.html5.min.js"></script>
+<script src="~/src/plugins/datatables/js/buttons.flash.min.js"></script>
+<script src="~/src/plugins/datatables/js/pdfmake.min.js"></script>
+<script src="~/src/plugins/datatables/js/vfs_fonts.js"></script>
+<script>
+    $(document).ready(function () {
+        if ($.fn.dataTable.isDataTable('.data-table')) {
+            $('.data-table').DataTable().destroy();
+        }
+
+        $('.data-table').DataTable({
+            responsive: true,
+            autoWidth: false,
+        });
+    });
+
+        document.querySelectorAll('.toggle-status').forEach(function (toggle) {
+    toggle.addEventListener('change', async function () {
+        const userId = this.dataset.id;
+        const newStatus = this.checked;
+        const previousStatus = !newStatus;
+
+        this.disabled = true;
+
+        try {
+            const token = document.querySelector(
+                'input[name="__RequestVerificationToken"]'
+            )?.value;
+
+            const response = await fetch(
+                '@Url.Action("UpdateStatus", "Brand", new { area = "Employee" })',
+                {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+                        'RequestVerificationToken': token || ''
+                    },
+                    body: new URLSearchParams({
+                        id: userId,
+                        isActive: newStatus
+                    })
+                }
+            );
+
+            const result = await response.json();
+
+            if (!response.ok || !result.success) {
+                throw new Error(
+                    result.message || 'Không thể cập nhật trạng thái'
+                );
+            }
+
+            console.log(result.message);
+
+        } catch (error) {
+            this.checked = previousStatus;
+
+            alert(
+                error.message ||
+                'Đã xảy ra lỗi khi cập nhật trạng thái'
+            );
+
+            console.error('Lỗi cập nhật trạng thái:', error);
+
+        } finally {
+            this.disabled = false;
+        }
+    });
+});
+</script>

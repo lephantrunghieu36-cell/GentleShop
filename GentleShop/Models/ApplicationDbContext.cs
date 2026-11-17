@@ -23,6 +23,7 @@ public partial class ApplicationDbContext : DbContext
     public DbSet<OrderDetail> OrderDetails => Set<OrderDetail>();
 
     public DbSet<Voucher> Vouchers => Set<Voucher>();
+    public DbSet<User> Users => Set<User>();
 
     public ApplicationDbContext()
     {
@@ -58,10 +59,6 @@ public partial class ApplicationDbContext : DbContext
         modelBuilder.Entity<Voucher>()
             .HasIndex(v => v.Code)
             .IsUnique();
-
-        // =========================
-        // PRODUCT - BRAND
-        // =========================
 
         modelBuilder.Entity<Product>()
             .HasOne(p => p.Brand)

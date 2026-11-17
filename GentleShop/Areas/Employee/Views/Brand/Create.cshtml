@@ -1,0 +1,157 @@
+﻿@model GentleShop.Models.Brand
+
+@{
+    ViewData["Title"] = "Thêm thương hiệu";
+}
+
+<div class="pd-ltr-20 xs-pd-20-10">
+    <div class="min-height-200px">
+
+        <!-- Page Header -->
+        <div class="page-header">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="title">
+                        <h4>Thêm thương hiệu</h4>
+                    </div>
+
+                    <nav aria-label="breadcrumb" role="navigation">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a asp-area="Employee"
+                                   asp-controller="Home"
+                                   asp-action="Index">
+                                    Trang chủ
+                                </a>
+                            </li>
+
+                            <li class="breadcrumb-item">
+                                <a asp-area="Employee"
+                                   asp-controller="Brand"
+                                   asp-action="Index">
+                                    Thương hiệu
+                                </a>
+                            </li>
+
+                            <li class="breadcrumb-item active" aria-current="page">
+                                Thêm thương hiệu
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form -->
+        <div class="pd-20 card-box mb-30">
+            <div class="pd-20">
+                <h4 class="text-blue h4">Thêm thương hiệu mới</h4>
+                <p class="mb-0">
+                    Nhập thông tin tài khoản cần tạo trong hệ thống.
+                </p>
+            </div>
+
+            <div class="pb-20">
+                <form asp-area="Employee"
+                      asp-controller="Brand"
+                      asp-action="Create"
+                      method="post"
+                      enctype="multipart/form-data">
+
+                    @Html.AntiForgeryToken()
+
+                    <div asp-validation-summary="ModelOnly"
+                         class="text-danger mb-3"></div>
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="Name">
+                                    Tên thương hiệu <span class="text-danger">*</span>
+                                </label>
+
+                                <input asp-for="Name"
+                                       class="form-control"
+                                       placeholder="Nhập tên thương hiệu"
+                                       required />
+
+                                <span asp-validation-for="Name"
+                                      class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label asp-for="Description">Mô tả</label>
+
+                                <textarea asp-for="Description"
+                                          class="form-control"
+                                          rows="4"
+                                          placeholder="Nhập mô tả thương hiệu"></textarea>
+
+                                <span asp-validation-for="Description"
+                                      class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Ảnh thương hiệu</label>
+
+                                <input type="file"
+                                       name="imageFile"
+                                       class="form-control"
+                                       accept=".jpg,.jpeg,.png,.webp"
+                                       id="imageFile" />
+
+                                <small class="text-muted">
+                                    Định dạng JPG, JPEG, PNG, WEBP. Tối đa 5MB.
+                                </small>
+
+                                <span class="text-danger">
+                                    @Html.ValidationMessage("imageFile")
+                                </span>
+
+                                <div class="mt-3">
+                                    <img id="previewImage"
+                                         src="#"
+                                         alt="Ảnh xem trước"
+                                         style="display:none; max-width:200px; max-height:150px; object-fit:contain;" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        <i class="dw dw-diskette1"></i> Lưu
+                    </button>
+
+                    <a asp-area="Employee"
+                       asp-controller="Brand"
+                       asp-action="Index"
+                       class="btn btn-secondary">
+                        Quay lại
+                    </a>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    document.getElementById('imageFile')
+        .addEventListener('change', function (event) {
+
+            const file = event.target.files[0];
+            const preview = document.getElementById('previewImage');
+
+            if (file) {
+                preview.src = URL.createObjectURL(file);
+                preview.style.display = 'block';
+            } else {
+                preview.style.display = 'none';
+            }
+        });
+</script>

@@ -1,4 +1,4 @@
-﻿@model Classroom360.Models.User
+﻿@model GentleShop.Models.User
 
 @{
     ViewData["Title"] = "Thêm người dùng";
@@ -144,14 +144,14 @@
                         <!-- Trạng thái -->
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label asp-for="IsActive">Trạng thái tài khoản</label>
+                                <label asp-for="Status">Trạng thái tài khoản</label>
 
-                                <select asp-for="IsActive" class="form-control">
+                                <select asp-for="Status" class="form-control">
                                     <option value="true">Hoạt động</option>
                                     <option value="false">Ngừng hoạt động</option>
                                 </select>
 
-                                <span asp-validation-for="IsActive"
+                                <span asp-validation-for="Status"
                                       class="text-danger"></span>
                             </div>
                         </div>

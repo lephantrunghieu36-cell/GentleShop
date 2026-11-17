@@ -1,4 +1,4 @@
-﻿@model Classroom360.Models.User
+﻿@model GentleShop.Models.User
 
 @{
     ViewData["Title"] = "Cập nhật người dùng";
@@ -45,7 +45,7 @@
             <div class="pd-20">
                 <h4 class="text-blue h4">Thông tin người dùng</h4>
                 <p class="mb-0">
-                    Cập nhật thông tin tài khoản trong hệ thống Classroom360.
+                    Cập nhật thông tin tài khoản trong hệ thống GentleShop.
                 </p>
             </div>
 
@@ -53,12 +53,12 @@
                 <form asp-area="Admin"
                       asp-controller="User"
                       asp-action="Edit"
-                      asp-route-id="@Model.UserId"
+                      asp-route-id="@Model.Id"
                       method="post">
 
                     @Html.AntiForgeryToken()
 
-                    <input type="hidden" asp-for="UserId" />
+                    <input type="hidden" asp-for="Id" />
 
                     <div asp-validation-summary="ModelOnly"
                          class="text-danger mb-3">
@@ -70,7 +70,7 @@
                             <div class="form-group">
                                 <label>Mã người dùng</label>
                                 <input class="form-control"
-                                       value="@Model.UserId"
+                                       value="@Model.Id"
                                        readonly />
                             </div>
                         </div>
@@ -124,7 +124,7 @@
                                 </label>
                                 <select asp-for="Role" class="form-control" required>
                                     <option value="STUDENT">Học sinh</option>
-                                    <option value="TEACHER">Giảng viên</option>
+                                    <option value="TEACHER">Nhân viên</option>
                                     <option value="ADMIN">Quản trị viên</option>
                                 </select>
                                 <span asp-validation-for="Role"
@@ -134,12 +134,12 @@
 
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label asp-for="IsActive">Trạng thái tài khoản</label>
-                                <select asp-for="IsActive" class="form-control">
+                                <label asp-for="Status">Trạng thái tài khoản</label>
+                                <select asp-for="Status" class="form-control">
                                     <option value="true">Hoạt động</option>
                                     <option value="false">Ngừng hoạt động</option>
                                 </select>
-                                <span asp-validation-for="IsActive"
+                                <span asp-validation-for="Status"
                                       class="text-danger"></span>
                             </div>
                         </div>

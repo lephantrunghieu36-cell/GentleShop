@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Admin</title>
+    <title>Employee</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="~/vendors/images/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="~/vendors/images/favicon-32x32.png" />
@@ -149,7 +149,7 @@
 
     <div class="left-side-bar">
         <div class="brand-logo">
-            <a asp-area="Admin" asp-controller="Home" asp-action="Index">
+            <a asp-area="Employee" asp-controller="Home" asp-action="Index">
                 <img src="~/vendors/images/deskapp-logo.svg" alt="Logo" class="dark-logo" />
                 <img src="~/vendors/images/deskapp-logo-white.svg" alt="Logo" class="light-logo" />
             </a>
@@ -164,7 +164,7 @@
 
                 <ul id="accordion-menu">
                     <li>
-                        <a asp-area="Admin"
+                        <a asp-area="Employee"
                            asp-controller="Home"
                            asp-action="Index"
                            class="dropdown-toggle no-arrow">
@@ -181,12 +181,12 @@
 
                         <ul class="submenu">
                             <li>
-                                <a asp-area="Admin" asp-controller="Faculty" asp-action="Index">
+                                <a asp-area="Employee" asp-controller="Faculty" asp-action="Index">
                                     Thống kê người dùng
                                 </a>
                             </li>
                             <li>
-                                <a asp-area="Admin" asp-controller="Major" asp-action="Index">
+                                <a asp-area="Employee" asp-controller="Major" asp-action="Index">
                                     Thống kê doanh thu
                                 </a>
                             </li>
@@ -197,25 +197,98 @@
                     <li class="dropdown">
                         <a href="javascript:;" class="dropdown-toggle">
                             <span class="micon bi bi-people"></span>
-                            <span class="mtext">Quản lý tài khoản</span>
+                            <span class="mtext">Quản lý danh mục</span>
                         </a>
 
                         <ul class="submenu">
                             <li>
-                                <a asp-area="Admin" asp-controller="User" asp-action="Index">
+                                <a asp-area="Employee" asp-controller="Category" asp-action="Index">
                                     Danh sách
                                 </a>
                             </li>
                             <li>
-                                <a asp-area="Admin" asp-controller="User" asp-action="Create">
+                                <a asp-area="Employee" asp-controller="Category" asp-action="Create">
                                     Thêm mới
                                 </a>
                             </li>
                         </ul>
                     </li>
 
-                </ul>
+                    <li class="dropdown">
+                        <a href="javascript:;" class="dropdown-toggle">
+                            <span class="micon bi bi-people"></span>
+                            <span class="mtext">Quản lý thương hiệu</span>
+                        </a>
 
+                        <ul class="submenu">
+                            <li>
+                                <a asp-area="Employee" asp-controller="Brand" asp-action="Index">
+                                    Danh sách
+                                </a>
+                            </li>
+                            <li>
+                                <a asp-area="Employee" asp-controller="Brand" asp-action="Create">
+                                    Thêm mới
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="javascript:;" class="dropdown-toggle">
+                            <span class="micon bi bi-people"></span>
+                            <span class="mtext">Quản lý sản phẩm</span>
+                        </a>
+
+                        <ul class="submenu">
+                            <li>
+                                <a asp-area="Employee" asp-controller="Product" asp-action="Index">
+                                    Danh sách
+                                </a>
+                            </li>
+                            <li>
+                                <a asp-area="Employee" asp-controller="Product" asp-action="Create">
+                                    Thêm mới
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="javascript:;" class="dropdown-toggle">
+                            <span class="micon bi bi-people"></span>
+                            <span class="mtext">Quản lý tồn kho</span>
+                        </a>
+
+                        <ul class="submenu">
+                            <li>
+                                <a asp-area="Employee" asp-controller="ProductVariant" asp-action="Index">
+                                    Danh sách
+                                </a>
+                            </li>
+                            <li>
+                                <a asp-area="Employee" asp-controller="ProductVariant" asp-action="Create">
+                                    Thêm phiếu nhập
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="javascript:;" class="dropdown-toggle">
+                            <span class="micon bi bi-people"></span>
+                            <span class="mtext">Quản lý đơn hàng</span>
+                        </a>
+
+                        <ul class="submenu">
+                            <li>
+                                <a asp-area="Employee" asp-controller="Order" asp-action="Index">
+                                    Danh sách
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

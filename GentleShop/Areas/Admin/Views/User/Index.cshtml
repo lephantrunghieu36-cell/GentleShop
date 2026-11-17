@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Classroom360.Models.User>
+﻿@model IEnumerable<GentleShop.Models.User>
 @Html.AntiForgeryToken()
 @{
     ViewData["Title"] = "Danh sách người dùng";
@@ -144,7 +144,7 @@
                             foreach (var user in Model)
                             {
                                 <tr>
-                                    <td>@user.UserId</td>
+                                    <td>@user.Id</td>
 
                                     <td>@user.FullName</td>
 
@@ -161,18 +161,18 @@
                                     </td>
 
                                     <td>
-                                        @switch (user.Role?.ToUpperInvariant())
+                                        @switch (user.Role)
                                         {
-                                            case "ADMIN":
+                                            case 0:
                                                 <span class="badge badge-danger">Quản trị viên</span>
                                                 break;
 
-                                            case "TEACHER":
-                                                <span class="badge badge-primary">Giảng viên</span>
+                                            case 1:
+                                                <span class="badge badge-primary">Nhân viên</span>
                                                 break;
 
-                                            case "STUDENT":
-                                                <span class="badge badge-success">Học sinh</span>
+                                            case 2:
+                                                <span class="badge badge-success">Khách hàng</span>
                                                 break;
 
                                             default:
@@ -185,8 +185,8 @@
                                         <label class="switch">
                                             <input type="checkbox"
                                                    class="toggle-status"
-                                                   data-id="@user.UserId"
-                                                   checked="@user.IsActive"
+                                                   data-id="@user.Id"
+                                                   checked="@user.Status"
                                                    aria-label="Trạng thái tài khoản @user.FullName" />
                                             <span class="slider"></span>
                                         </label>
@@ -196,7 +196,7 @@
                                         <a asp-area="Admin"
                                            asp-controller="User"
                                            asp-action="Edit"
-                                           asp-route-id="@user.UserId"
+                                           asp-route-id="@user.Id"
                                            class="btn btn-warning btn-sm">
                                             <i class="dw dw-edit2"></i> Cập nhật
                                         </a>

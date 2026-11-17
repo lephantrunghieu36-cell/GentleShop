@@ -1,0 +1,339 @@
+﻿@model GentleShop.Models.Product
+
+@{
+    ViewData["Title"] = "Thêm sản phẩm";
+}
+
+<div class="pd-ltr-20 xs-pd-20-10">
+    <div class="min-height-200px">
+
+        <div class="page-header">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="title">
+                        <h4>Thêm sản phẩm</h4>
+                    </div>
+
+                    <nav aria-label="breadcrumb" role="navigation">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a asp-area="Employee"
+                                   asp-controller="Home"
+                                   asp-action="Index">
+                                    Trang chủ
+                                </a>
+                            </li>
+
+                            <li class="breadcrumb-item">
+                                <a asp-area="Employee"
+                                   asp-controller="Product"
+                                   asp-action="Index">
+                                    Sản phẩm
+                                </a>
+                            </li>
+
+                            <li class="breadcrumb-item active" aria-current="page">
+                                Thêm sản phẩm
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form -->
+        <div class="pd-20 card-box mb-30">
+            <div class="pd-20">
+                <h4 class="text-blue h4">Thêm sản phẩm mới</h4>
+                <p class="mb-0">
+                    Nhập thông tin tài khoản cần tạo trong hệ thống.
+                </p>
+            </div>
+
+            <div class="pb-20">
+                <form asp-area="Employee"
+                      asp-controller="Product"
+                      asp-action="Create"
+                      method="post"
+                      enctype="multipart/form-data">
+
+                    @Html.AntiForgeryToken()
+
+                    <div asp-validation-summary="ModelOnly"
+                         class="alert alert-danger">
+                    </div>
+
+                    <div class="row">
+
+                        <!-- THÔNG TIN SẢN PHẨM -->
+                        <div class="col-lg-8 col-md-12">
+                            <div class="card-box mb-30">
+                                <div class="pd-20">
+                                    <h4 class="text-blue h4">Thông tin sản phẩm</h4>
+                                    <p class="mb-0">
+                                        Nhập các thông tin cơ bản của sản phẩm.
+                                    </p>
+                                </div>
+
+                                <div class="pd-20 pt-0">
+
+                                    <div class="form-group">
+                                        <label asp-for="Name">
+                                            Tên sản phẩm <span class="text-danger">*</span>
+                                        </label>
+                                        <input asp-for="Name"
+                                               class="form-control"
+                                               placeholder="Nhập tên sản phẩm..." />
+                                        <span asp-validation-for="Name"
+                                              class="text-danger"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Slug</label>
+                                        <input class="form-control"
+                                               value="Tự động tạo từ tên sản phẩm"
+                                               disabled />
+                                        <small class="text-muted">
+                                            Slug sẽ được hệ thống tự động tạo khi lưu.
+                                        </small>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label asp-for="ShortDescription">
+                                            Mô tả ngắn
+                                        </label>
+                                        <textarea asp-for="ShortDescription"
+                                                  class="form-control"
+                                                  rows="3"
+                                                  placeholder="Nhập mô tả ngắn về sản phẩm..."></textarea>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label asp-for="Description">
+                                            Mô tả chi tiết
+                                        </label>
+                                        <textarea asp-for="Description"
+                                                  class="form-control"
+                                                  rows="7"
+                                                  placeholder="Nhập nội dung mô tả chi tiết sản phẩm..."></textarea>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label asp-for="Specifications">
+                                            Thông số kỹ thuật
+                                        </label>
+                                        <textarea asp-for="Specifications"
+                                                  class="form-control"
+                                                  rows="5"
+                                                  placeholder="Nhập thông số kỹ thuật sản phẩm..."></textarea>
+                                        <small class="text-muted">
+                                            Có thể nhập thông số dưới dạng văn bản hoặc JSON.
+                                        </small>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- HÌNH ẢNH -->
+                            <div class="card-box mb-30">
+                                <div class="pd-20">
+                                    <h4 class="text-blue h4">Hình ảnh sản phẩm</h4>
+                                    <p class="mb-0">
+                                        Tải ảnh đại diện và các ảnh mô tả sản phẩm.
+                                    </p>
+                                </div>
+
+                                <div class="pd-20 pt-0">
+
+                                    <div class="form-group">
+                                        <label>
+                                            Ảnh đại diện
+                                            <span class="text-danger">*</span>
+                                        </label>
+
+                                        <input type="file"
+                                               name="thumbnailFile"
+                                               id="thumbnailFile"
+                                               class="form-control-file"
+                                               accept=".jpg,.jpeg,.png,.webp" />
+
+                                        <small class="text-muted">
+                                            Hỗ trợ JPG, JPEG, PNG, WEBP. Tối đa 5MB.
+                                        </small>
+
+                                        <div class="mt-3">
+                                            <img id="thumbnailPreview"
+                                                 src=""
+                                                 alt="Ảnh đại diện xem trước"
+                                                 style="display:none; max-width:220px; max-height:220px; object-fit:contain; border:1px solid #ddd; padding:5px; border-radius:6px;" />
+                                        </div>
+
+                                        <span class="text-danger">
+                                            @Html.ValidationMessage("thumbnailFile")
+                                        </span>
+                                    </div>
+
+                                    <hr />
+
+                                    <div class="form-group">
+                                        <label>Ảnh mô tả sản phẩm</label>
+
+                                        <input type="file"
+                                               name="imageFiles"
+                                               id="imageFiles"
+                                               class="form-control-file"
+                                               accept=".jpg,.jpeg,.png,.webp"
+                                               multiple />
+
+                                        <small class="text-muted">
+                                            Có thể chọn nhiều ảnh cùng lúc.
+                                        </small>
+
+                                        <div id="imagePreview"
+                                             class="d-flex flex-wrap mt-3"
+                                             style="gap:10px;">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- THÔNG TIN PHÂN LOẠI -->
+                        <div class="col-lg-4 col-md-12">
+
+                            <div class="card-box mb-30">
+                                <div class="pd-20">
+                                    <h4 class="text-blue h4">Phân loại sản phẩm</h4>
+                                </div>
+
+                                <div class="pd-20 pt-0">
+
+                                    <div class="form-group">
+                                        <label>Thương hiệu</label>
+                                        <select asp-for="BrandId"
+                                                asp-items="ViewBag.Brands"
+                                                class="form-control">
+                                            <option value="">-- Chọn thương hiệu --</option>
+                                        </select>
+                                        <span asp-validation-for="BrandId"
+                                              class="text-danger"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Danh mục</label>
+                                        <select asp-for="CategoryId"
+                                                asp-items="ViewBag.Categories"
+                                                class="form-control">
+                                            <option value="">-- Chọn danh mục --</option>
+                                        </select>
+                                        <span asp-validation-for="CategoryId"
+                                              class="text-danger"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- TRẠNG THÁI -->
+                            <div class="card-box mb-30">
+                                <div class="pd-20">
+                                    <h4 class="text-blue h4">Trạng thái và hiển thị</h4>
+                                </div>
+
+                                <div class="pd-20 pt-0">
+
+                                    <div class="form-group">
+                                        <label asp-for="Status">Trạng thái</label>
+                                        <select asp-for="Status" class="form-control">
+                                            <option value="active">Đang kinh doanh</option>
+                                            <option value="inactive">Ngừng kinh doanh</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input asp-for="IsFeatured"
+                                               class="custom-control-input"
+                                               type="checkbox" />
+                                        <label asp-for="IsFeatured"
+                                               class="custom-control-label">
+                                            Sản phẩm nổi bật
+                                        </label>
+                                    </div>
+
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input asp-for="IsNew"
+                                               class="custom-control-input"
+                                               type="checkbox" />
+                                        <label asp-for="IsNew"
+                                               class="custom-control-label">
+                                            Sản phẩm mới
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="card-box">
+                                <div class="pd-20">
+                                    <button type="submit"
+                                            class="btn btn-primary btn-block mb-2">
+                                        <i class="dw dw-diskette"></i>
+                                        Lưu sản phẩm
+                                    </button>
+
+                                    <a asp-area="Employee"
+                                       asp-controller="Product"
+                                       asp-action="Index"
+                                       class="btn btn-outline-secondary btn-block">
+                                        Hủy
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    document.getElementById('thumbnailFile').addEventListener('change', function () {
+        const preview = document.getElementById('thumbnailPreview');
+        const file = this.files[0];
+
+        if (file) {
+            preview.src = URL.createObjectURL(file);
+            preview.style.display = 'block';
+        } else {
+            preview.src = '';
+            preview.style.display = 'none';
+        }
+    });
+
+    document.getElementById('imageFiles').addEventListener('change', function () {
+        const previewContainer = document.getElementById('imagePreview');
+        previewContainer.innerHTML = '';
+
+        Array.from(this.files).forEach(file => {
+            if (!file.type.startsWith('image/')) return;
+
+            const wrapper = document.createElement('div');
+            wrapper.style.width = '110px';
+            wrapper.style.height = '110px';
+            wrapper.style.border = '1px solid #ddd';
+            wrapper.style.borderRadius = '6px';
+            wrapper.style.padding = '4px';
+
+            const img = document.createElement('img');
+            img.src = URL.createObjectURL(file);
+            img.style.width = '100%';
+            img.style.height = '100%';
+            img.style.objectFit = 'cover';
+            img.style.borderRadius = '4px';
+
+            wrapper.appendChild(img);
+            previewContainer.appendChild(wrapper);
+        });
+    });
+</script>

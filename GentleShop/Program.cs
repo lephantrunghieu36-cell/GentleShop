@@ -1,5 +1,4 @@
 using GentleShop.Models;
-using GentleShop.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -49,8 +48,6 @@ using (var scope = app.Services.CreateScope())
 {
     var context = scope.ServiceProvider
         .GetRequiredService<ApplicationDbContext>();
-
-    await DbSeeder.SeedAsync(context);
 }
 
 app.Run();
