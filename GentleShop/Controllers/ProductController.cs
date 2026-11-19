@@ -17,9 +17,9 @@ namespace GentleShop.Controllers
             return View();
         }
         [HttpGet]
-        public async Task<IActionResult> Details(int id)
+        public async Task<IActionResult> Details()
         {
-            var product = await _context.Products.FindAsync(id);
+            var product = await _context.Products.FindAsync(1);
 
             if (product == null)
                 return NotFound();

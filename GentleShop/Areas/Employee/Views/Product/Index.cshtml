@@ -124,8 +124,7 @@
             </div>
 
             <div class="pb-20">
-                <table class="table table-striped table-hover nowrap">
-
+                <table class="data-table table stripe hover">
                     <thead>
                         <tr>
                             <th class="table-plus">STT</th>
@@ -262,54 +261,30 @@
                                     @item.CreatedAt.ToString("dd/MM/yyyy")
                                 </td>
 
-                                <!-- THAO TÁC -->
                                 <td>
-                                    <div class="dropdown">
-                                        <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
-                                           href="#"
-                                           role="button"
-                                           data-toggle="dropdown">
-                                            <i class="dw dw-more"></i>
-                                        </a>
+                                    <a asp-area="Employee"
+                                       asp-controller="Product"
+                                       asp-action="Edit"
+                                       asp-route-id="@item.Id"
+                                       class="btn btn-warning btn-sm">
+                                        <i class="dw dw-edit2"></i>
+                                    </a>
 
-                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                                    <form asp-area="Employee"
+                                          asp-controller="Product"
+                                          asp-action="Delete"
+                                          asp-route-id="@item.Id"
+                                          method="post"
+                                          class="d-inline"
+                                          onsubmit="return confirm('Bạn có chắc chắn muốn xóa?');">
 
-                                            <a class="dropdown-item"
-                                               asp-area="Employee"
-                                               asp-controller="Product"
-                                               asp-action="Details"
-                                               asp-route-id="@item.Id">
-                                                <i class="dw dw-eye"></i>
-                                                Xem chi tiết
-                                            </a>
+                                        @Html.AntiForgeryToken()
 
-                                            <a class="dropdown-item"
-                                               asp-area="Employee"
-                                               asp-controller="Product"
-                                               asp-action="Edit"
-                                               asp-route-id="@item.Id">
-                                                <i class="dw dw-edit2"></i>
-                                                Chỉnh sửa
-                                            </a>
-
-                                            <form asp-area="Employee"
-                                                  asp-controller="Product"
-                                                  asp-action="Delete"
-                                                  asp-route-id="@item.Id"
-                                                  method="post"
-                                                  onsubmit="return confirm('Bạn có chắc chắn muốn xóa sản phẩm @item.Name?');">
-
-                                                @Html.AntiForgeryToken()
-
-                                                <button type="submit"
-                                                        class="dropdown-item text-danger">
-                                                    <i class="dw dw-delete-3"></i>
-                                                    Xóa sản phẩm
-                                                </button>
-                                            </form>
-
-                                        </div>
-                                    </div>
+                                        <button type="submit"
+                                                class="btn btn-danger btn-sm">
+                                            <i class="dw dw-delete-3"></i>
+                                        </button>
+                                    </form>
                                 </td>
                             </tr>
 

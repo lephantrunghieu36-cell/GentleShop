@@ -1,4 +1,4 @@
-
+﻿
 using GentleShop.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -11,14 +11,18 @@ namespace GentleShop.Areas.Admin.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly PasswordHasher<User> _passwordHasher = new();
+        private readonly ILogger<UserController> _logger;
 
-        private const int AdminRole = 1;
-        private const int EmployeeRole = 2;
-        private const int CustomerRole = 3;
+        private const int AdminRole = 0;
+        private const int EmployeeRole = 1;
+        private const int CustomerRole = 2;
 
-        public UserController(ApplicationDbContext context)
+        public UserController(
+            ApplicationDbContext context,
+            ILogger<UserController> logger)
         {
             _context = context;
+            _logger = logger;
         }
 
         public async Task<IActionResult> Index(int? role, string? search)
@@ -119,15 +123,7 @@ namespace GentleShop.Areas.Admin.Controllers
             {
                 ModelState.AddModelError(
                     nameof(user.Email),
-                    "Email này đã được sử dụng!");
-            }
-
-            if (user.Role != EmployeeRole &&
-                user.Role != CustomerRole)
-            {
-                ModelState.AddModelError(
-                    nameof(user.Role),
-                    "Vai trò không hợp lệ!");
+                    "Email này đã tồn tại!");
             }
 
             if (!ModelState.IsValid)

@@ -3,16 +3,72 @@
   "WorkspaceRootPath": "D:\\Documents\\GentleShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\areas\\employee\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\areas\\employee\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\areas\\admin\\views\\user\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\areas\\admin\\views\\user\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\areas\\employee\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\areas\\employee\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\areas\\employee\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\areas\\employee\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\areas\\employee\\views\\brand\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\areas\\employee\\views\\brand\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\areas\\admin\\views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\areas\\admin\\views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\areas\\admin\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\areas\\admin\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\models\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\models\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\areas\\employee\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\areas\\employee\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\areas\\employee\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -23,36 +79,12 @@
       "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\areas\\employee\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\areas\\employee\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\areas\\employee\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -61,18 +93,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\areas\\admin\\views\\user\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\areas\\admin\\views\\user\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\areas\\admin\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\areas\\admin\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\areas\\admin\\views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\areas\\admin\\views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\areas\\employee\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -89,10 +109,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\areas\\employee\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\areas\\employee\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -115,14 +131,6 @@
       "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\areas\\employee\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\areas\\employee\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\areas\\employee\\views\\brand\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\areas\\employee\\views\\brand\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\areas\\employee\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\areas\\employee\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -137,10 +145,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\areas\\employee\\views\\brand\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\areas\\employee\\views\\brand\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\models\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|solutionrelative:gentleshop\\models\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{656FB3A4-DDCD-233E-8C5C-ECE4B048525B}|GentleShop\\GentleShop.csproj|d:\\documents\\gentleshop\\gentleshop\\models\\import.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -198,11 +202,204 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Admin\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "GentleShop\\Areas\\Admin\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Admin\\Controllers\\UserController.cs",
+              "RelativeToolTip": "GentleShop\\Areas\\Admin\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAiwFoAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-16T23:27:56.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "GentleShop\\Views\\Product\\Index.cshtml",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "GentleShop\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAAEBAAAAAAAAAAAAwBQBAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-17T22:17:30.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Views\\Brand\\Index.cshtml",
+              "RelativeDocumentMoniker": "GentleShop\\Areas\\Employee\\Views\\Brand\\Index.cshtml",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Views\\Brand\\Index.cshtml",
+              "RelativeToolTip": "GentleShop\\Areas\\Employee\\Views\\Brand\\Index.cshtml",
+              "ViewState": "AgIAAL0AAAAAAAAAAAAQwMYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-17T16:24:48.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Views\\Category\\Index.cshtml",
+              "RelativeDocumentMoniker": "GentleShop\\Areas\\Employee\\Views\\Category\\Index.cshtml",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Views\\Category\\Index.cshtml",
+              "RelativeToolTip": "GentleShop\\Areas\\Employee\\Views\\Category\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-17T16:26:47.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "GentleShop\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "GentleShop\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAOoAAAAAAAAAAAAAwP4AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-17T22:11:25.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Brand.cs",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Models\\Brand.cs",
+              "RelativeDocumentMoniker": "GentleShop\\Models\\Brand.cs",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Models\\Brand.cs",
+              "RelativeToolTip": "GentleShop\\Models\\Brand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T09:11:06.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Views\\Product\\Details.cshtml",
+              "RelativeDocumentMoniker": "GentleShop\\Views\\Product\\Details.cshtml",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Views\\Product\\Details.cshtml",
+              "RelativeToolTip": "GentleShop\\Views\\Product\\Details.cshtml",
+              "ViewState": "AgIAAGwBAAAAAAAAAAAAAHQBAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-17T22:25:44.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Admin\\Views\\User\\Create.cshtml",
+              "RelativeDocumentMoniker": "GentleShop\\Areas\\Admin\\Views\\User\\Create.cshtml",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Admin\\Views\\User\\Create.cshtml",
+              "RelativeToolTip": "GentleShop\\Areas\\Admin\\Views\\User\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-17T16:45:19.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "GentleShop\\Areas\\Employee\\Views\\Product\\Index.cshtml",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "GentleShop\\Areas\\Employee\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAH8AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-17T16:37:04.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "GentleShop\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "GentleShop\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wBIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T16:33:05.412Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Admin\\Views\\User\\Edit.cshtml",
+              "RelativeDocumentMoniker": "GentleShop\\Areas\\Admin\\Views\\User\\Edit.cshtml",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Admin\\Views\\User\\Edit.cshtml",
+              "RelativeToolTip": "GentleShop\\Areas\\Admin\\Views\\User\\Edit.cshtml",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAlwHAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-17T16:46:15.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DbSeeder.cs",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Data\\DbSeeder.cs",
+              "RelativeDocumentMoniker": "GentleShop\\Data\\DbSeeder.cs",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Data\\DbSeeder.cs",
+              "RelativeToolTip": "GentleShop\\Data\\DbSeeder.cs",
+              "ViewState": "AgIAABkBAAAAAAAAAAAmwCkBAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T22:09:26.506Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Admin\\Views\\User\\Index.cshtml",
+              "RelativeDocumentMoniker": "GentleShop\\Areas\\Admin\\Views\\User\\Index.cshtml",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Admin\\Views\\User\\Index.cshtml",
+              "RelativeToolTip": "GentleShop\\Areas\\Admin\\Views\\User\\Index.cshtml",
+              "ViewState": "AgIAABYBAAAAAAAAAAAmwK8AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-17T16:45:35.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Program.cs",
+              "RelativeDocumentMoniker": "GentleShop\\Program.cs",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Program.cs",
+              "RelativeToolTip": "GentleShop\\Program.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T16:45:01.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "GentleShop\\Areas\\Employee\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "GentleShop\\Areas\\Employee\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAC0AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-17T16:24:26.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Models\\User.cs",
+              "RelativeDocumentMoniker": "GentleShop\\Models\\User.cs",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Models\\User.cs",
+              "RelativeToolTip": "GentleShop\\Models\\User.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAADwvyQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-18T15:44:20.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Admin\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "GentleShop\\Areas\\Admin\\Views\\Home\\Index.cshtml",
@@ -210,87 +407,23 @@
               "RelativeToolTip": "GentleShop\\Areas\\Admin\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAN4AAAAAAAAAAAAUwPIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-17T22:36:32.566Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-17T22:36:32.566Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Views\\Product\\Details.cshtml",
-              "RelativeDocumentMoniker": "GentleShop\\Views\\Product\\Details.cshtml",
-              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Views\\Product\\Details.cshtml",
-              "RelativeToolTip": "GentleShop\\Views\\Product\\Details.cshtml",
-              "ViewState": "AgIAAHsBAAAAAAAAAAAAAIQBAAAAAAAAAAAAAA==",
+              "DocumentIndex": 17,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "GentleShop\\Areas\\Employee\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "GentleShop\\Areas\\Employee\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAUwKEAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-17T22:25:44.576Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DbSeeder.cs",
-              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Data\\DbSeeder.cs",
-              "RelativeDocumentMoniker": "GentleShop\\Data\\DbSeeder.cs",
-              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Data\\DbSeeder.cs",
-              "RelativeToolTip": "GentleShop\\Data\\DbSeeder.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAiwA8AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-17T22:09:26.506Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Views\\Product\\Index.cshtml",
-              "RelativeDocumentMoniker": "GentleShop\\Areas\\Employee\\Views\\Product\\Index.cshtml",
-              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Views\\Product\\Index.cshtml",
-              "RelativeToolTip": "GentleShop\\Areas\\Employee\\Views\\Product\\Index.cshtml",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAE4AAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-17T16:37:04.912Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "GentleShop\\Areas\\Employee\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "GentleShop\\Areas\\Employee\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAACQCAAAAAAAAAAAlwCoCAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-17T16:34:52.569Z"
+              "WhenOpened": "2026-11-17T16:17:10.948Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "GentleShop\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "GentleShop\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-17T16:33:05.412Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "GentleShop\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "GentleShop\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-17T16:32:54.596Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Admin\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "GentleShop\\Areas\\Admin\\Controllers\\HomeController.cs",
@@ -302,46 +435,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "GentleShop\\Areas\\Employee\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "GentleShop\\Areas\\Employee\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAJQAAAAAAAAAAAAUwKEAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-17T16:17:10.948Z",
-              "EditorCaption": ""
+              "DocumentIndex": 27,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "GentleShop\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "GentleShop\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T16:32:54.596Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "GentleShop\\Areas\\Employee\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "GentleShop\\Areas\\Employee\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-17T16:24:26.462Z",
-              "EditorCaption": ""
+              "DocumentIndex": 26,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "GentleShop\\Areas\\Employee\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "GentleShop\\Areas\\Employee\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAACQCAAAAAAAAAAAlwCoCAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T16:34:52.569Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "GentleShop\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "GentleShop\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAE0BAAAAAAAAAAAUwGEBAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-17T22:11:25.907Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 18,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "GentleShop\\Views\\Shared\\_Layout.cshtml",
@@ -349,25 +467,11 @@
               "RelativeToolTip": "GentleShop\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAEsAAAAAAAAAAAAUwBkAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-17T22:11:29.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-17T22:11:29.069Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Views\\Product\\Index.cshtml",
-              "RelativeDocumentMoniker": "GentleShop\\Views\\Product\\Index.cshtml",
-              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Views\\Product\\Index.cshtml",
-              "RelativeToolTip": "GentleShop\\Views\\Product\\Index.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-17T22:17:30.956Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 19,
               "Title": "style.css",
               "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\wwwroot\\css\\style.css",
               "RelativeDocumentMoniker": "GentleShop\\wwwroot\\css\\style.css",
@@ -375,12 +479,11 @@
               "RelativeToolTip": "GentleShop\\wwwroot\\css\\style.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-11-17T22:13:11.245Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-17T22:13:11.245Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "GentleShop\\Areas\\Employee\\Controllers\\HomeController.cs",
@@ -392,32 +495,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Admin\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "GentleShop\\Areas\\Admin\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Admin\\Controllers\\UserController.cs",
-              "RelativeToolTip": "GentleShop\\Areas\\Admin\\Controllers\\UserController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAEwDQAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-16T23:27:56.84Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Program.cs",
-              "RelativeDocumentMoniker": "GentleShop\\Program.cs",
-              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Program.cs",
-              "RelativeToolTip": "GentleShop\\Program.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAC8AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-17T16:45:01.897Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 24,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Views\\Product\\Create.cshtml",
               "RelativeDocumentMoniker": "GentleShop\\Areas\\Employee\\Views\\Product\\Create.cshtml",
@@ -429,7 +507,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 20,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Models\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "GentleShop\\Models\\ApplicationDbContext.cs",
@@ -437,12 +515,11 @@
               "RelativeToolTip": "GentleShop\\Models\\ApplicationDbContext.cs",
               "ViewState": "AgIAAEoAAAAAAAAAAAAkwFYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-12T09:14:22.269Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-12T09:14:22.269Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 23,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Views\\Product\\Edit.cshtml",
               "RelativeDocumentMoniker": "GentleShop\\Areas\\Employee\\Views\\Product\\Edit.cshtml",
@@ -454,67 +531,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Admin\\Views\\User\\Edit.cshtml",
-              "RelativeDocumentMoniker": "GentleShop\\Areas\\Admin\\Views\\User\\Edit.cshtml",
-              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Admin\\Views\\User\\Edit.cshtml",
-              "RelativeToolTip": "GentleShop\\Areas\\Admin\\Views\\User\\Edit.cshtml",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAUwIIAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-17T16:46:15.482Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Admin\\Views\\User\\Create.cshtml",
-              "RelativeDocumentMoniker": "GentleShop\\Areas\\Admin\\Views\\User\\Create.cshtml",
-              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Admin\\Views\\User\\Create.cshtml",
-              "RelativeToolTip": "GentleShop\\Areas\\Admin\\Views\\User\\Create.cshtml",
-              "ViewState": "AgIAAIMAAAAAAAAAAADwv5kAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-17T16:45:19.623Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Admin\\Views\\User\\Index.cshtml",
-              "RelativeDocumentMoniker": "GentleShop\\Areas\\Admin\\Views\\User\\Index.cshtml",
-              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Admin\\Views\\User\\Index.cshtml",
-              "RelativeToolTip": "GentleShop\\Areas\\Admin\\Views\\User\\Index.cshtml",
-              "ViewState": "AgIAAKcAAAAAAAAAAADwv6oAAABWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-17T16:45:35.415Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Views\\Category\\Index.cshtml",
-              "RelativeDocumentMoniker": "GentleShop\\Areas\\Employee\\Views\\Category\\Index.cshtml",
-              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Views\\Category\\Index.cshtml",
-              "RelativeToolTip": "GentleShop\\Areas\\Employee\\Views\\Category\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-17T16:26:47.676Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Views\\Brand\\Index.cshtml",
-              "RelativeDocumentMoniker": "GentleShop\\Areas\\Employee\\Views\\Brand\\Index.cshtml",
-              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Views\\Brand\\Index.cshtml",
-              "RelativeToolTip": "GentleShop\\Areas\\Employee\\Views\\Brand\\Index.cshtml",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAEMAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-17T16:24:48.306Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 25,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Views\\Brand\\Create.cshtml",
               "RelativeDocumentMoniker": "GentleShop\\Areas\\Employee\\Views\\Brand\\Create.cshtml",
@@ -526,7 +543,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "Product.cs",
               "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Models\\Product.cs",
               "RelativeDocumentMoniker": "GentleShop\\Models\\Product.cs",
@@ -538,7 +555,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "BrandController.cs",
               "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Controllers\\BrandController.cs",
               "RelativeDocumentMoniker": "GentleShop\\Areas\\Employee\\Controllers\\BrandController.cs",
@@ -550,7 +567,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Views\\Category\\Create.cshtml",
               "RelativeDocumentMoniker": "GentleShop\\Areas\\Employee\\Views\\Category\\Create.cshtml",
@@ -562,7 +579,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "GentleShop\\Areas\\Employee\\Controllers\\CategoryController.cs",
@@ -574,7 +591,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Views\\Category\\Edit.cshtml",
               "RelativeDocumentMoniker": "GentleShop\\Areas\\Employee\\Views\\Category\\Edit.cshtml",
@@ -586,7 +603,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "ProductImage.cs",
               "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Models\\ProductImage.cs",
               "RelativeDocumentMoniker": "GentleShop\\Models\\ProductImage.cs",
@@ -598,7 +615,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Views\\Brand\\Edit.cshtml",
               "RelativeDocumentMoniker": "GentleShop\\Areas\\Employee\\Views\\Brand\\Edit.cshtml",
@@ -610,7 +627,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "Category.cs",
               "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Models\\Category.cs",
               "RelativeDocumentMoniker": "GentleShop\\Models\\Category.cs",
@@ -622,7 +639,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\appsettings.json",
               "RelativeDocumentMoniker": "GentleShop\\appsettings.json",
@@ -634,7 +651,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "20261112093031_Init.cs",
               "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Migrations\\20261112093031_Init.cs",
               "RelativeDocumentMoniker": "GentleShop\\Migrations\\20261112093031_Init.cs",
@@ -646,7 +663,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "Voucher.cs",
               "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Models\\Voucher.cs",
               "RelativeDocumentMoniker": "GentleShop\\Models\\Voucher.cs",
@@ -658,7 +675,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "Import.cs",
               "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Models\\Import.cs",
               "RelativeDocumentMoniker": "GentleShop\\Models\\Import.cs",
@@ -670,19 +687,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Brand.cs",
-              "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Models\\Brand.cs",
-              "RelativeDocumentMoniker": "GentleShop\\Models\\Brand.cs",
-              "ToolTip": "D:\\Documents\\GentleShop\\GentleShop\\Models\\Brand.cs",
-              "RelativeToolTip": "GentleShop\\Models\\Brand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-12T09:11:06.473Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "GentleShop\\Views\\_ViewStart.cshtml",
@@ -694,7 +699,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Employee\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "GentleShop\\Areas\\Employee\\Views\\_ViewStart.cshtml",
@@ -706,7 +711,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "GentleShop\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
@@ -718,7 +723,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "ProductVariant.cs",
               "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Models\\ProductVariant.cs",
               "RelativeDocumentMoniker": "GentleShop\\Models\\ProductVariant.cs",
@@ -730,7 +735,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "OrderDetail.cs",
               "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Models\\OrderDetail.cs",
               "RelativeDocumentMoniker": "GentleShop\\Models\\OrderDetail.cs",
@@ -742,7 +747,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "Order.cs",
               "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Models\\Order.cs",
               "RelativeDocumentMoniker": "GentleShop\\Models\\Order.cs",
@@ -754,7 +759,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "ImportDetail.cs",
               "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Models\\ImportDetail.cs",
               "RelativeDocumentMoniker": "GentleShop\\Models\\ImportDetail.cs",
@@ -766,7 +771,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "Supplier.cs",
               "DocumentMoniker": "D:\\Documents\\GentleShop\\GentleShop\\Models\\Supplier.cs",
               "RelativeDocumentMoniker": "GentleShop\\Models\\Supplier.cs",

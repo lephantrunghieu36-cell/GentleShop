@@ -31,7 +31,6 @@ namespace GentleShop.Models
 
         public bool Status { get; set; } = true;
 
-        [Required]
         public string Password { get; set; } = string.Empty;
     }
 }
